@@ -28,7 +28,8 @@ To achieve **99% accuracy**, this pipeline enforces:
 
 ## **How to Run**
 
-1. 'pip install -r requirements.txt'
-2. 'python ingest_prices.py'
-3. 'dbt run'
-4. 'dbt test'
+```bash
+1. pip install -r requirements.txt
+2. python ingest_prices.py
+3. dbt run
+4. dbt test
