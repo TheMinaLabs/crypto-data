@@ -1,0 +1,1486 @@
+[0m18:15:18.490129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b052cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c063750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c063610>]}
+
+
+============================== 18:15:18.494394 | fba2184e-6bfc-44d0-903b-d7b83e2891fa ==============================
+[0m18:15:18.494394 [info ] [MainThread]: Running with dbt=1.11.6
+[0m18:15:18.494779 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'target_path': 'None', 'empty': 'None', 'partial_parse': 'True', 'warn_error': 'None', 'profiles_dir': '/Users/mirnadellamonicaioshida/.dbt', 'debug': 'False', 'use_experimental_parser': 'False', 'log_path': '/Users/mirnadellamonicaioshida/Desktop/crypto_data/logs', 'indirect_selection': 'eager', 'introspect': 'True', 'log_cache_events': 'False', 'version_check': 'True', 'invocation_command': 'dbt debug', 'cache_selected_only': 'False', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'printer_width': '80', 'log_format': 'default', 'no_print': 'None', 'use_colors': 'True'}
+[0m18:15:18.506025 [info ] [MainThread]: dbt version: 1.11.6
+[0m18:15:18.506300 [info ] [MainThread]: python version: 3.13.2
+[0m18:15:18.506477 [info ] [MainThread]: python path: /Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13
+[0m18:15:18.506630 [info ] [MainThread]: os info: macOS-26.3-arm64-arm-64bit-Mach-O
+[0m18:15:18.920470 [info ] [MainThread]: Using profiles dir at /Users/mirnadellamonicaioshida/.dbt
+[0m18:15:18.920815 [info ] [MainThread]: Using profiles.yml file at /Users/mirnadellamonicaioshida/.dbt/profiles.yml
+[0m18:15:18.920992 [info ] [MainThread]: Using dbt_project.yml file at /Users/mirnadellamonicaioshida/Desktop/crypto_data/dbt_project.yml
+[0m18:15:18.922458 [info ] [MainThread]: adapter type: duckdb
+[0m18:15:18.922639 [info ] [MainThread]: adapter version: 1.10.1
+[0m18:15:18.996562 [info ] [MainThread]: Configuration:
+[0m18:15:18.996899 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:15:18.997081 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:15:18.997241 [info ] [MainThread]: Required dependencies:
+[0m18:15:18.997674 [debug] [MainThread]: Executing "git --help"
+[0m18:15:19.008059 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:15:19.009045 [debug] [MainThread]: STDERR: "b''"
+[0m18:15:19.009364 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:15:19.009601 [info ] [MainThread]: Connection:
+[0m18:15:19.009831 [info ] [MainThread]:   database: crypto_vault
+[0m18:15:19.009995 [info ] [MainThread]:   schema: main
+[0m18:15:19.010167 [info ] [MainThread]:   path: /Users/mirnadellamonicaioshida/Desktop/crypto_data/data/crypto_vault.duckdb
+[0m18:15:19.010304 [info ] [MainThread]:   config_options: None
+[0m18:15:19.010465 [info ] [MainThread]:   extensions: None
+[0m18:15:19.010608 [info ] [MainThread]:   settings: {}
+[0m18:15:19.010759 [info ] [MainThread]:   external_root: .
+[0m18:15:19.010892 [info ] [MainThread]:   use_credential_provider: None
+[0m18:15:19.011026 [info ] [MainThread]:   attach: None
+[0m18:15:19.011154 [info ] [MainThread]:   filesystems: None
+[0m18:15:19.011488 [info ] [MainThread]:   remote: None
+[0m18:15:19.011666 [info ] [MainThread]:   plugins: None
+[0m18:15:19.011819 [info ] [MainThread]:   disable_transactions: False
+[0m18:15:19.012398 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m18:15:19.085930 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m18:15:19.188440 [debug] [MainThread]: Using duckdb connection "debug"
+[0m18:15:19.188721 [debug] [MainThread]: On debug: select 1 as id
+[0m18:15:19.188895 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:15:19.196971 [debug] [MainThread]: SQL status: OK in 0.008 seconds
+[0m18:15:19.197602 [debug] [MainThread]: On debug: Close
+[0m18:15:19.197845 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:15:19.198042 [info ] [MainThread]: [32mAll checks passed![0m
+[0m18:15:19.199780 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.7614827, "process_in_blocks": "0", "process_kernel_time": 0.233098, "process_mem_max_rss": "144375808", "process_out_blocks": "0", "process_user_time": 1.010127}
+[0m18:15:19.200066 [debug] [MainThread]: Command `dbt debug` succeeded at 18:15:19.200008 after 0.76 seconds
+[0m18:15:19.200239 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:15:19.200440 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c2fe780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c7b04d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c2b7350>]}
+[0m18:15:19.200670 [debug] [MainThread]: Flushing usage events
+[0m18:15:19.910141 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:23:27.514324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d0aecf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e0c7750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e0c7610>]}
+
+
+============================== 18:23:27.517607 | 5fb6c8eb-a62a-40b2-836c-d65271d600a4 ==============================
+[0m18:23:27.517607 [info ] [MainThread]: Running with dbt=1.11.6
+[0m18:23:27.517986 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'log_cache_events': 'False', 'log_format': 'default', 'target_path': 'None', 'printer_width': '80', 'profiles_dir': '/Users/mirnadellamonicaioshida/.dbt', 'cache_selected_only': 'False', 'quiet': 'False', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'static_parser': 'True', 'introspect': 'True', 'empty': 'False', 'log_path': '/Users/mirnadellamonicaioshida/Desktop/crypto_data/logs', 'write_json': 'True', 'debug': 'False', 'partial_parse': 'True', 'warn_error': 'None', 'use_experimental_parser': 'False', 'use_colors': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True'}
+[0m18:23:27.690001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5fb6c8eb-a62a-40b2-836c-d65271d600a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d3b5f30>]}
+[0m18:23:27.732452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5fb6c8eb-a62a-40b2-836c-d65271d600a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d045e10>]}
+[0m18:23:27.733963 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m18:23:27.788168 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m18:23:27.788783 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:23:27.789012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5fb6c8eb-a62a-40b2-836c-d65271d600a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1acf50>]}
+[0m18:23:28.268928 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.crypto_data.marts
+- models.crypto_data.staging
+[0m18:23:28.271702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5fb6c8eb-a62a-40b2-836c-d65271d600a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1e96d0>]}
+[0m18:23:28.295098 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/manifest.json
+[0m18:23:28.297034 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/semantic_manifest.json
+[0m18:23:28.310876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5fb6c8eb-a62a-40b2-836c-d65271d600a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e60cd70>]}
+[0m18:23:28.311154 [info ] [MainThread]: Found 474 macros
+[0m18:23:28.311345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5fb6c8eb-a62a-40b2-836c-d65271d600a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e623c70>]}
+[0m18:23:28.312148 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m18:23:28.312453 [debug] [MainThread]: Command end result
+[0m18:23:28.323670 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/manifest.json
+[0m18:23:28.324951 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/semantic_manifest.json
+[0m18:23:28.326828 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/run_results.json
+[0m18:23:28.328538 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.8694457, "process_in_blocks": "0", "process_kernel_time": 0.218627, "process_mem_max_rss": "140034048", "process_out_blocks": "0", "process_user_time": 1.513525}
+[0m18:23:28.328797 [debug] [MainThread]: Command `dbt run` succeeded at 18:23:28.328746 after 0.87 seconds
+[0m18:23:28.328999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e0cd610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e663490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e663540>]}
+[0m18:23:28.329190 [debug] [MainThread]: Flushing usage events
+[0m18:23:28.902232 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:26:22.118690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a92cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a97750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a97610>]}
+
+
+============================== 18:26:22.122011 | 4e9b8a7e-c62a-4feb-89d5-fedc07c4278f ==============================
+[0m18:26:22.122011 [info ] [MainThread]: Running with dbt=1.11.6
+[0m18:26:22.122377 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'invocation_command': 'dbt list', 'printer_width': '80', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'debug': 'False', 'static_parser': 'True', 'cache_selected_only': 'False', 'log_path': '/Users/mirnadellamonicaioshida/Desktop/crypto_data/logs', 'profiles_dir': '/Users/mirnadellamonicaioshida/.dbt', 'write_json': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'partial_parse': 'True', 'version_check': 'True', 'use_colors': 'True', 'warn_error': 'None', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True'}
+[0m18:26:22.293620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4e9b8a7e-c62a-4feb-89d5-fedc07c4278f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d99f30>]}
+[0m18:26:22.336247 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4e9b8a7e-c62a-4feb-89d5-fedc07c4278f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a29e10>]}
+[0m18:26:22.337725 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m18:26:22.394949 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m18:26:22.451357 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:26:22.451636 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m18:26:22.451803 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:26:22.452156 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.crypto_data.marts
+- models.crypto_data.staging
+[0m18:26:22.455268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4e9b8a7e-c62a-4feb-89d5-fedc07c4278f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b8f650>]}
+[0m18:26:22.480642 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/manifest.json
+[0m18:26:22.482288 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/semantic_manifest.json
+[0m18:26:22.494581 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4e9b8a7e-c62a-4feb-89d5-fedc07c4278f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109bcde50>]}
+[0m18:26:22.495359 [warn ] [MainThread]: No nodes selected!
+[0m18:26:22.497127 [debug] [MainThread]: Resource report: {"command_name": "list", "command_success": true, "command_wall_clock_time": 0.43084162, "process_in_blocks": "0", "process_kernel_time": 0.216634, "process_mem_max_rss": "139968512", "process_out_blocks": "0", "process_user_time": 1.084421}
+[0m18:26:22.497405 [debug] [MainThread]: Command `dbt list` succeeded at 18:26:22.497353 after 0.43 seconds
+[0m18:26:22.497613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a7be70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109de2270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a08bd40>]}
+[0m18:26:22.497792 [debug] [MainThread]: Flushing usage events
+[0m18:26:23.055732 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:37:10.662614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a986cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b99b750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b99b610>]}
+
+
+============================== 18:37:10.666618 | 3f11db5f-450b-4fca-ab61-bd68c3dae353 ==============================
+[0m18:37:10.666618 [info ] [MainThread]: Running with dbt=1.11.6
+[0m18:37:10.667003 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'version_check': 'True', 'printer_width': '80', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'log_path': '/Users/mirnadellamonicaioshida/Desktop/crypto_data/logs', 'quiet': 'False', 'invocation_command': 'dbt run --select stg_raw_coin_data', 'use_colors': 'True', 'debug': 'False', 'partial_parse': 'True', 'introspect': 'True', 'indirect_selection': 'eager', 'empty': 'False', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'fail_fast': 'False', 'log_format': 'default', 'static_parser': 'True', 'profiles_dir': '/Users/mirnadellamonicaioshida/.dbt', 'warn_error': 'None'}
+[0m18:37:10.886171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3f11db5f-450b-4fca-ab61-bd68c3dae353', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac9df30>]}
+[0m18:37:10.929046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3f11db5f-450b-4fca-ab61-bd68c3dae353', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a91de10>]}
+[0m18:37:10.931887 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m18:37:10.989140 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m18:37:11.046351 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 0 files changed.
+[0m18:37:11.046705 [debug] [MainThread]: Partial parsing: added file: crypto_data://models/marts/fct_crypto_prices.sql
+[0m18:37:11.046904 [debug] [MainThread]: Partial parsing: added file: crypto_data://models/staging/stg_raw_coin_data.sql
+[0m18:37:11.252245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3f11db5f-450b-4fca-ab61-bd68c3dae353', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba87450>]}
+[0m18:37:11.284860 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/manifest.json
+[0m18:37:11.286774 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/semantic_manifest.json
+[0m18:37:11.304286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3f11db5f-450b-4fca-ab61-bd68c3dae353', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bac5e50>]}
+[0m18:37:11.304555 [info ] [MainThread]: Found 2 models, 474 macros
+[0m18:37:11.304746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3f11db5f-450b-4fca-ab61-bd68c3dae353', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bbca430>]}
+[0m18:37:11.305603 [info ] [MainThread]: 
+[0m18:37:11.305795 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:37:11.305943 [info ] [MainThread]: 
+[0m18:37:11.306205 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m18:37:11.306696 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_crypto_vault'
+[0m18:37:11.382888 [debug] [ThreadPool]: Using duckdb connection "list_crypto_vault"
+[0m18:37:11.383193 [debug] [ThreadPool]: On list_crypto_vault: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "connection_name": "list_crypto_vault"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"crypto_vault"'
+    
+  
+  
+[0m18:37:11.383373 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:37:11.394360 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m18:37:11.395113 [debug] [ThreadPool]: On list_crypto_vault: Close
+[0m18:37:11.395515 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_crypto_vault, now create_crypto_vault_main)
+[0m18:37:11.395763 [debug] [ThreadPool]: Creating schema "database: "crypto_vault"
+schema: "main"
+"
+[0m18:37:11.399603 [debug] [ThreadPool]: Using duckdb connection "create_crypto_vault_main"
+[0m18:37:11.399820 [debug] [ThreadPool]: On create_crypto_vault_main: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "connection_name": "create_crypto_vault_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='crypto_vault'
+        and type='sqlite'
+    
+  
+[0m18:37:11.399976 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:37:11.400644 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m18:37:11.401349 [debug] [ThreadPool]: Using duckdb connection "create_crypto_vault_main"
+[0m18:37:11.401503 [debug] [ThreadPool]: On create_crypto_vault_main: BEGIN
+[0m18:37:11.401721 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m18:37:11.401851 [debug] [ThreadPool]: Using duckdb connection "create_crypto_vault_main"
+[0m18:37:11.401982 [debug] [ThreadPool]: On create_crypto_vault_main: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "connection_name": "create_crypto_vault_main"} */
+
+    
+    
+        create schema if not exists "crypto_vault"."main"
+    
+[0m18:37:11.402223 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m18:37:11.402624 [debug] [ThreadPool]: On create_crypto_vault_main: COMMIT
+[0m18:37:11.402783 [debug] [ThreadPool]: Using duckdb connection "create_crypto_vault_main"
+[0m18:37:11.402918 [debug] [ThreadPool]: On create_crypto_vault_main: COMMIT
+[0m18:37:11.403123 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m18:37:11.403259 [debug] [ThreadPool]: On create_crypto_vault_main: Close
+[0m18:37:11.406110 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_crypto_vault_main, now list_crypto_vault_main)
+[0m18:37:11.409423 [debug] [ThreadPool]: Using duckdb connection "list_crypto_vault_main"
+[0m18:37:11.409620 [debug] [ThreadPool]: On list_crypto_vault_main: BEGIN
+[0m18:37:11.409762 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:37:11.410018 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m18:37:11.410148 [debug] [ThreadPool]: Using duckdb connection "list_crypto_vault_main"
+[0m18:37:11.410291 [debug] [ThreadPool]: On list_crypto_vault_main: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "connection_name": "list_crypto_vault_main"} */
+select
+      'crypto_vault' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'crypto_vault'
+  
+[0m18:37:11.418074 [debug] [ThreadPool]: SQL status: OK in 0.008 seconds
+[0m18:37:11.418666 [debug] [ThreadPool]: On list_crypto_vault_main: ROLLBACK
+[0m18:37:11.419621 [debug] [ThreadPool]: Failed to rollback 'list_crypto_vault_main'
+[0m18:37:11.419770 [debug] [ThreadPool]: On list_crypto_vault_main: Close
+[0m18:37:11.420233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3f11db5f-450b-4fca-ab61-bd68c3dae353', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c40cbb0>]}
+[0m18:37:11.420477 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:37:11.420621 [debug] [MainThread]: On master: BEGIN
+[0m18:37:11.420756 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:37:11.420994 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:37:11.421126 [debug] [MainThread]: On master: COMMIT
+[0m18:37:11.421260 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:37:11.421388 [debug] [MainThread]: On master: COMMIT
+[0m18:37:11.421583 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:37:11.421720 [debug] [MainThread]: On master: Close
+[0m18:37:11.423357 [debug] [Thread-1 (]: Began running node model.crypto_data.stg_raw_coin_data
+[0m18:37:11.423674 [info ] [Thread-1 (]: 1 of 1 START sql view model main.stg_raw_coin_data ............................. [RUN]
+[0m18:37:11.423926 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_crypto_vault_main, now model.crypto_data.stg_raw_coin_data)
+[0m18:37:11.424115 [debug] [Thread-1 (]: Began compiling node model.crypto_data.stg_raw_coin_data
+[0m18:37:11.427641 [debug] [Thread-1 (]: Writing injected SQL for node "model.crypto_data.stg_raw_coin_data"
+[0m18:37:11.428293 [debug] [Thread-1 (]: Began executing node model.crypto_data.stg_raw_coin_data
+[0m18:37:11.445988 [debug] [Thread-1 (]: Writing runtime sql for node "model.crypto_data.stg_raw_coin_data"
+[0m18:37:11.446770 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.stg_raw_coin_data"
+[0m18:37:11.446967 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: BEGIN
+[0m18:37:11.447138 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:37:11.447505 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:37:11.447674 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.stg_raw_coin_data"
+[0m18:37:11.447852 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "model.crypto_data.stg_raw_coin_data"} */
+
+  
+  create view "crypto_vault"."main"."stg_raw_coin_data__dbt_tmp" as (
+    -- This model reads the raw parquet file created by the Python script
+select
+    ticker::varchar as ticker,
+    price::float as price_eur,
+    current_timestamp as processed_at
+from 'data/raw_coin_data.parquet'
+  );
+
+[0m18:37:11.451575 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m18:37:11.454881 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.stg_raw_coin_data"
+[0m18:37:11.455074 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "model.crypto_data.stg_raw_coin_data"} */
+alter view "crypto_vault"."main"."stg_raw_coin_data__dbt_tmp" rename to "stg_raw_coin_data"
+[0m18:37:11.455639 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:37:11.461351 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: COMMIT
+[0m18:37:11.461571 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.stg_raw_coin_data"
+[0m18:37:11.461744 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: COMMIT
+[0m18:37:11.462517 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m18:37:11.465220 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.stg_raw_coin_data"
+[0m18:37:11.465415 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "model.crypto_data.stg_raw_coin_data"} */
+
+      drop view if exists "crypto_vault"."main"."stg_raw_coin_data__dbt_backup" cascade
+    
+[0m18:37:11.465861 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:37:11.467125 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: Close
+[0m18:37:11.468311 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3f11db5f-450b-4fca-ab61-bd68c3dae353', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c0f8b90>]}
+[0m18:37:11.468690 [info ] [Thread-1 (]: 1 of 1 OK created sql view model main.stg_raw_coin_data ........................ [[32mOK[0m in 0.04s]
+[0m18:37:11.469001 [debug] [Thread-1 (]: Finished running node model.crypto_data.stg_raw_coin_data
+[0m18:37:11.469698 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:37:11.469905 [debug] [MainThread]: On master: BEGIN
+[0m18:37:11.470058 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:37:11.470341 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:37:11.470491 [debug] [MainThread]: On master: COMMIT
+[0m18:37:11.470632 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:37:11.470766 [debug] [MainThread]: On master: COMMIT
+[0m18:37:11.470986 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:37:11.471122 [debug] [MainThread]: On master: Close
+[0m18:37:11.471307 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:37:11.471442 [debug] [MainThread]: Connection 'model.crypto_data.stg_raw_coin_data' was properly closed.
+[0m18:37:11.471588 [info ] [MainThread]: 
+[0m18:37:11.471745 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.17 seconds (0.17s).
+[0m18:37:11.472084 [debug] [MainThread]: Command end result
+[0m18:37:11.485999 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/manifest.json
+[0m18:37:11.487374 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/semantic_manifest.json
+[0m18:37:11.490904 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/run_results.json
+[0m18:37:11.491079 [info ] [MainThread]: 
+[0m18:37:11.491302 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:37:11.491453 [info ] [MainThread]: 
+[0m18:37:11.491618 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m18:37:11.493897 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.88652176, "process_in_blocks": "0", "process_kernel_time": 0.30833, "process_mem_max_rss": "156680192", "process_out_blocks": "0", "process_user_time": 1.405026}
+[0m18:37:11.494140 [debug] [MainThread]: Command `dbt run` succeeded at 18:37:11.494089 after 0.89 seconds
+[0m18:37:11.494334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c2c19c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ff9310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b2cc7d0>]}
+[0m18:37:11.494527 [debug] [MainThread]: Flushing usage events
+[0m18:37:12.030901 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:42:28.089498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b04ecf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c063750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c063610>]}
+
+
+============================== 18:42:28.093141 | 03db6283-37c2-4757-bb15-328c106fc134 ==============================
+[0m18:42:28.093141 [info ] [MainThread]: Running with dbt=1.11.6
+[0m18:42:28.093516 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'indirect_selection': 'eager', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'quiet': 'False', 'use_colors': 'True', 'log_path': '/Users/mirnadellamonicaioshida/Desktop/crypto_data/logs', 'version_check': 'True', 'profiles_dir': '/Users/mirnadellamonicaioshida/.dbt', 'warn_error': 'None', 'cache_selected_only': 'False', 'write_json': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'empty': 'False', 'debug': 'False', 'invocation_command': 'dbt run'}
+[0m18:42:28.307610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '03db6283-37c2-4757-bb15-328c106fc134', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b365f30>]}
+[0m18:42:28.350218 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '03db6283-37c2-4757-bb15-328c106fc134', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10afe5e10>]}
+[0m18:42:28.353085 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m18:42:28.409584 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m18:42:28.482921 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m18:42:28.483368 [debug] [MainThread]: Partial parsing: added file: crypto_data://models/marts/schema.yml
+[0m18:42:28.483622 [debug] [MainThread]: Partial parsing: updated file: crypto_data://models/marts/fct_crypto_prices.sql
+[0m18:42:28.754447 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on
+'fct_crypto_prices' in package 'crypto_data' (models/marts/schema.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m18:42:28.754855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '03db6283-37c2-4757-bb15-328c106fc134', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c14c950>]}
+[0m18:42:28.794807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '03db6283-37c2-4757-bb15-328c106fc134', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c69a300>]}
+[0m18:42:28.839085 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/manifest.json
+[0m18:42:28.840805 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/semantic_manifest.json
+[0m18:42:28.857424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '03db6283-37c2-4757-bb15-328c106fc134', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c5aa890>]}
+[0m18:42:28.857720 [info ] [MainThread]: Found 2 models, 3 data tests, 474 macros
+[0m18:42:28.857928 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '03db6283-37c2-4757-bb15-328c106fc134', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c91cd50>]}
+[0m18:42:28.858978 [info ] [MainThread]: 
+[0m18:42:28.859180 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:42:28.859332 [info ] [MainThread]: 
+[0m18:42:28.859600 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m18:42:28.862204 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_crypto_vault'
+[0m18:42:28.937747 [debug] [ThreadPool]: Using duckdb connection "list_crypto_vault"
+[0m18:42:28.938050 [debug] [ThreadPool]: On list_crypto_vault: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "connection_name": "list_crypto_vault"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"crypto_vault"'
+    
+  
+  
+[0m18:42:28.938222 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:42:28.950619 [debug] [ThreadPool]: SQL status: OK in 0.012 seconds
+[0m18:42:28.951382 [debug] [ThreadPool]: On list_crypto_vault: Close
+[0m18:42:28.951781 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_crypto_vault, now create_crypto_vault_main)
+[0m18:42:28.952026 [debug] [ThreadPool]: Creating schema "database: "crypto_vault"
+schema: "main"
+"
+[0m18:42:28.955817 [debug] [ThreadPool]: Using duckdb connection "create_crypto_vault_main"
+[0m18:42:28.955992 [debug] [ThreadPool]: On create_crypto_vault_main: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "connection_name": "create_crypto_vault_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='crypto_vault'
+        and type='sqlite'
+    
+  
+[0m18:42:28.956134 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:42:28.956764 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m18:42:28.957416 [debug] [ThreadPool]: Using duckdb connection "create_crypto_vault_main"
+[0m18:42:28.957564 [debug] [ThreadPool]: On create_crypto_vault_main: BEGIN
+[0m18:42:28.957783 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m18:42:28.957910 [debug] [ThreadPool]: Using duckdb connection "create_crypto_vault_main"
+[0m18:42:28.958043 [debug] [ThreadPool]: On create_crypto_vault_main: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "connection_name": "create_crypto_vault_main"} */
+
+    
+    
+        create schema if not exists "crypto_vault"."main"
+    
+[0m18:42:28.958290 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m18:42:28.958707 [debug] [ThreadPool]: On create_crypto_vault_main: COMMIT
+[0m18:42:28.958862 [debug] [ThreadPool]: Using duckdb connection "create_crypto_vault_main"
+[0m18:42:28.958996 [debug] [ThreadPool]: On create_crypto_vault_main: COMMIT
+[0m18:42:28.959248 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m18:42:28.959481 [debug] [ThreadPool]: On create_crypto_vault_main: Close
+[0m18:42:28.960145 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_crypto_vault_main, now list_crypto_vault_main)
+[0m18:42:28.963338 [debug] [ThreadPool]: Using duckdb connection "list_crypto_vault_main"
+[0m18:42:28.963526 [debug] [ThreadPool]: On list_crypto_vault_main: BEGIN
+[0m18:42:28.963670 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:42:28.963939 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m18:42:28.964080 [debug] [ThreadPool]: Using duckdb connection "list_crypto_vault_main"
+[0m18:42:28.964229 [debug] [ThreadPool]: On list_crypto_vault_main: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "connection_name": "list_crypto_vault_main"} */
+select
+      'crypto_vault' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'crypto_vault'
+  
+[0m18:42:28.972104 [debug] [ThreadPool]: SQL status: OK in 0.008 seconds
+[0m18:42:28.972798 [debug] [ThreadPool]: On list_crypto_vault_main: ROLLBACK
+[0m18:42:28.973825 [debug] [ThreadPool]: Failed to rollback 'list_crypto_vault_main'
+[0m18:42:28.973989 [debug] [ThreadPool]: On list_crypto_vault_main: Close
+[0m18:42:28.974495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '03db6283-37c2-4757-bb15-328c106fc134', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cbf8290>]}
+[0m18:42:28.974752 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:42:28.974907 [debug] [MainThread]: On master: BEGIN
+[0m18:42:28.975040 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:42:28.975310 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:42:28.975489 [debug] [MainThread]: On master: COMMIT
+[0m18:42:28.975639 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:42:28.975774 [debug] [MainThread]: On master: COMMIT
+[0m18:42:28.975993 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:42:28.976141 [debug] [MainThread]: On master: Close
+[0m18:42:28.977764 [debug] [Thread-1 (]: Began running node model.crypto_data.stg_raw_coin_data
+[0m18:42:28.978048 [info ] [Thread-1 (]: 1 of 2 START sql view model main.stg_raw_coin_data ............................. [RUN]
+[0m18:42:28.978290 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_crypto_vault_main, now model.crypto_data.stg_raw_coin_data)
+[0m18:42:28.978470 [debug] [Thread-1 (]: Began compiling node model.crypto_data.stg_raw_coin_data
+[0m18:42:28.981967 [debug] [Thread-1 (]: Writing injected SQL for node "model.crypto_data.stg_raw_coin_data"
+[0m18:42:28.982436 [debug] [Thread-1 (]: Began executing node model.crypto_data.stg_raw_coin_data
+[0m18:42:29.000248 [debug] [Thread-1 (]: Writing runtime sql for node "model.crypto_data.stg_raw_coin_data"
+[0m18:42:29.001035 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.stg_raw_coin_data"
+[0m18:42:29.001243 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: BEGIN
+[0m18:42:29.001422 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:42:29.001817 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:42:29.001990 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.stg_raw_coin_data"
+[0m18:42:29.002159 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "model.crypto_data.stg_raw_coin_data"} */
+
+  
+  create view "crypto_vault"."main"."stg_raw_coin_data__dbt_tmp" as (
+    -- This model reads the raw parquet file created by the Python script
+select
+    ticker::varchar as ticker,
+    price::float as price_eur,
+    current_timestamp as processed_at
+from 'data/raw_coin_data.parquet'
+  );
+
+[0m18:42:29.005326 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m18:42:29.008889 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.stg_raw_coin_data"
+[0m18:42:29.009092 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "model.crypto_data.stg_raw_coin_data"} */
+alter view "crypto_vault"."main"."stg_raw_coin_data" rename to "stg_raw_coin_data__dbt_backup"
+[0m18:42:29.009466 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:42:29.011135 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.stg_raw_coin_data"
+[0m18:42:29.011316 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "model.crypto_data.stg_raw_coin_data"} */
+alter view "crypto_vault"."main"."stg_raw_coin_data__dbt_tmp" rename to "stg_raw_coin_data"
+[0m18:42:29.011594 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:42:29.017903 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: COMMIT
+[0m18:42:29.018113 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.stg_raw_coin_data"
+[0m18:42:29.018290 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: COMMIT
+[0m18:42:29.018885 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:42:29.021753 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.stg_raw_coin_data"
+[0m18:42:29.021962 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "model.crypto_data.stg_raw_coin_data"} */
+
+      drop view if exists "crypto_vault"."main"."stg_raw_coin_data__dbt_backup" cascade
+    
+[0m18:42:29.022523 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:42:29.023860 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: Close
+[0m18:42:29.025112 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '03db6283-37c2-4757-bb15-328c106fc134', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c7cfa10>]}
+[0m18:42:29.025474 [info ] [Thread-1 (]: 1 of 2 OK created sql view model main.stg_raw_coin_data ........................ [[32mOK[0m in 0.05s]
+[0m18:42:29.025774 [debug] [Thread-1 (]: Finished running node model.crypto_data.stg_raw_coin_data
+[0m18:42:29.026150 [debug] [Thread-1 (]: Began running node model.crypto_data.fct_crypto_prices
+[0m18:42:29.026429 [info ] [Thread-1 (]: 2 of 2 START sql table model main.fct_crypto_prices ............................ [RUN]
+[0m18:42:29.026713 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.crypto_data.stg_raw_coin_data, now model.crypto_data.fct_crypto_prices)
+[0m18:42:29.026923 [debug] [Thread-1 (]: Began compiling node model.crypto_data.fct_crypto_prices
+[0m18:42:29.028640 [debug] [Thread-1 (]: Writing injected SQL for node "model.crypto_data.fct_crypto_prices"
+[0m18:42:29.029086 [debug] [Thread-1 (]: Began executing node model.crypto_data.fct_crypto_prices
+[0m18:42:29.040184 [debug] [Thread-1 (]: Writing runtime sql for node "model.crypto_data.fct_crypto_prices"
+[0m18:42:29.040820 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.fct_crypto_prices"
+[0m18:42:29.041006 [debug] [Thread-1 (]: On model.crypto_data.fct_crypto_prices: BEGIN
+[0m18:42:29.041165 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:42:29.041497 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:42:29.041659 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.fct_crypto_prices"
+[0m18:42:29.041826 [debug] [Thread-1 (]: On model.crypto_data.fct_crypto_prices: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "model.crypto_data.fct_crypto_prices"} */
+
+  
+    
+    
+
+    create  table
+      "crypto_vault"."main"."fct_crypto_prices__dbt_tmp"
+  
+    as (
+      
+
+WITH prices AS (
+    SELECT * FROM "crypto_vault"."main"."stg_raw_coin_data"
+)
+
+select
+    ticker,
+    price_eur,
+    processed_at,
+    -- Data Quality Flag: flag if the price is valid (positive)
+    case when price_eur > 0 then true else false end as in_valid_price
+from prices
+    );
+  
+  
+[0m18:42:29.045076 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m18:42:29.046848 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.fct_crypto_prices"
+[0m18:42:29.047029 [debug] [Thread-1 (]: On model.crypto_data.fct_crypto_prices: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "model.crypto_data.fct_crypto_prices"} */
+alter table "crypto_vault"."main"."fct_crypto_prices__dbt_tmp" rename to "fct_crypto_prices"
+[0m18:42:29.047342 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:42:29.049869 [debug] [Thread-1 (]: On model.crypto_data.fct_crypto_prices: COMMIT
+[0m18:42:29.050044 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.fct_crypto_prices"
+[0m18:42:29.050205 [debug] [Thread-1 (]: On model.crypto_data.fct_crypto_prices: COMMIT
+[0m18:42:29.050771 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:42:29.051813 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.fct_crypto_prices"
+[0m18:42:29.051988 [debug] [Thread-1 (]: On model.crypto_data.fct_crypto_prices: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "model.crypto_data.fct_crypto_prices"} */
+
+      drop table if exists "crypto_vault"."main"."fct_crypto_prices__dbt_backup" cascade
+    
+[0m18:42:29.052302 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:42:29.053070 [debug] [Thread-1 (]: On model.crypto_data.fct_crypto_prices: Close
+[0m18:42:29.053374 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '03db6283-37c2-4757-bb15-328c106fc134', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cd43d90>]}
+[0m18:42:29.053704 [info ] [Thread-1 (]: 2 of 2 OK created sql table model main.fct_crypto_prices ....................... [[32mOK[0m in 0.03s]
+[0m18:42:29.053996 [debug] [Thread-1 (]: Finished running node model.crypto_data.fct_crypto_prices
+[0m18:42:29.054647 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:42:29.054820 [debug] [MainThread]: On master: BEGIN
+[0m18:42:29.054963 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:42:29.055204 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:42:29.055346 [debug] [MainThread]: On master: COMMIT
+[0m18:42:29.055481 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:42:29.055609 [debug] [MainThread]: On master: COMMIT
+[0m18:42:29.055815 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:42:29.055948 [debug] [MainThread]: On master: Close
+[0m18:42:29.056128 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:42:29.056260 [debug] [MainThread]: Connection 'model.crypto_data.fct_crypto_prices' was properly closed.
+[0m18:42:29.056411 [info ] [MainThread]: 
+[0m18:42:29.056570 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 0.20 seconds (0.20s).
+[0m18:42:29.056956 [debug] [MainThread]: Command end result
+[0m18:42:29.069271 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/manifest.json
+[0m18:42:29.070771 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/semantic_manifest.json
+[0m18:42:29.074255 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/run_results.json
+[0m18:42:29.074426 [info ] [MainThread]: 
+[0m18:42:29.074629 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:42:29.074775 [info ] [MainThread]: 
+[0m18:42:29.074929 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m18:42:29.075221 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m18:42:29.077877 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.0414752, "process_in_blocks": "0", "process_kernel_time": 0.304771, "process_mem_max_rss": "161120256", "process_out_blocks": "0", "process_user_time": 1.573308}
+[0m18:42:29.078141 [debug] [MainThread]: Command `dbt run` succeeded at 18:42:29.078089 after 1.04 seconds
+[0m18:42:29.078338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c32b850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c05dfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c0f8520>]}
+[0m18:42:29.078524 [debug] [MainThread]: Flushing usage events
+[0m18:42:29.638825 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:43:16.108104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa9acf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10baaf750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10baaf610>]}
+
+
+============================== 18:43:16.111130 | cdf8c520-cdbe-4679-b099-058bb2ab8402 ==============================
+[0m18:43:16.111130 [info ] [MainThread]: Running with dbt=1.11.6
+[0m18:43:16.111512 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'debug': 'False', 'write_json': 'True', 'warn_error': 'None', 'fail_fast': 'False', 'partial_parse': 'True', 'invocation_command': 'dbt test', 'profiles_dir': '/Users/mirnadellamonicaioshida/.dbt', 'static_parser': 'True', 'log_format': 'default', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'log_path': '/Users/mirnadellamonicaioshida/Desktop/crypto_data/logs', 'use_colors': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'printer_width': '80', 'no_print': 'None'}
+[0m18:43:16.283124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cdf8c520-cdbe-4679-b099-058bb2ab8402', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ada1f30>]}
+[0m18:43:16.325633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cdf8c520-cdbe-4679-b099-058bb2ab8402', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa31e10>]}
+[0m18:43:16.327124 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m18:43:16.380428 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m18:43:16.459768 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:43:16.460044 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m18:43:16.460200 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:43:16.481804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cdf8c520-cdbe-4679-b099-058bb2ab8402', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bb9ac50>]}
+[0m18:43:16.522332 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/manifest.json
+[0m18:43:16.523896 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/semantic_manifest.json
+[0m18:43:16.542739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cdf8c520-cdbe-4679-b099-058bb2ab8402', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c141f40>]}
+[0m18:43:16.543043 [info ] [MainThread]: Found 2 models, 3 data tests, 474 macros
+[0m18:43:16.543245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cdf8c520-cdbe-4679-b099-058bb2ab8402', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c215c50>]}
+[0m18:43:16.546446 [info ] [MainThread]: 
+[0m18:43:16.546651 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:43:16.546796 [info ] [MainThread]: 
+[0m18:43:16.547066 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m18:43:16.549917 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_crypto_vault_main'
+[0m18:43:16.656731 [debug] [ThreadPool]: Using duckdb connection "list_crypto_vault_main"
+[0m18:43:16.657016 [debug] [ThreadPool]: On list_crypto_vault_main: BEGIN
+[0m18:43:16.657177 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:43:16.664119 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m18:43:16.664349 [debug] [ThreadPool]: Using duckdb connection "list_crypto_vault_main"
+[0m18:43:16.664536 [debug] [ThreadPool]: On list_crypto_vault_main: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "connection_name": "list_crypto_vault_main"} */
+select
+      'crypto_vault' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'crypto_vault'
+  
+[0m18:43:16.670752 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m18:43:16.671607 [debug] [ThreadPool]: On list_crypto_vault_main: ROLLBACK
+[0m18:43:16.672316 [debug] [ThreadPool]: Failed to rollback 'list_crypto_vault_main'
+[0m18:43:16.672496 [debug] [ThreadPool]: On list_crypto_vault_main: Close
+[0m18:43:16.673104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cdf8c520-cdbe-4679-b099-058bb2ab8402', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c421a50>]}
+[0m18:43:16.673365 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:43:16.673514 [debug] [MainThread]: On master: BEGIN
+[0m18:43:16.673650 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:43:16.673916 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:43:16.674055 [debug] [MainThread]: On master: COMMIT
+[0m18:43:16.674194 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:43:16.674321 [debug] [MainThread]: On master: COMMIT
+[0m18:43:16.674538 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:43:16.674672 [debug] [MainThread]: On master: Close
+[0m18:43:16.675982 [debug] [Thread-1 (]: Began running node test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c
+[0m18:43:16.676192 [info ] [Thread-1 (]: 1 of 3 START test accepted_values_fct_crypto_prices_is_valid_price__True ....... [RUN]
+[0m18:43:16.676428 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_crypto_vault_main, now test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c)
+[0m18:43:16.676614 [debug] [Thread-1 (]: Began compiling node test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c
+[0m18:43:16.685653 [debug] [Thread-1 (]: Writing injected SQL for node "test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c"
+[0m18:43:16.686248 [debug] [Thread-1 (]: Began executing node test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c
+[0m18:43:16.697489 [debug] [Thread-1 (]: Writing runtime sql for node "test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c"
+[0m18:43:16.698198 [debug] [Thread-1 (]: Using duckdb connection "test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c"
+[0m18:43:16.698420 [debug] [Thread-1 (]: On test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c: BEGIN
+[0m18:43:16.698596 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:43:16.698975 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:43:16.699148 [debug] [Thread-1 (]: Using duckdb connection "test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c"
+[0m18:43:16.699329 [debug] [Thread-1 (]: On test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        is_valid_price as value_field,
+        count(*) as n_records
+
+    from "crypto_vault"."main"."fct_crypto_prices"
+    group by is_valid_price
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'True'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:43:16.701672 [debug] [Thread-1 (]: DuckDB adapter: duckdb error: Binder Error: Referenced column "is_valid_price" not found in FROM clause!
+Candidate bindings: "in_valid_price", "processed_at", "price_eur"
+
+LINE 21:     group by is_valid_price
+                      ^
+[0m18:43:16.701873 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        is_valid_price as value_field,
+        count(*) as n_records
+
+    from "crypto_vault"."main"."fct_crypto_prices"
+    group by is_valid_price
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'True'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:43:16.702057 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m18:43:16.702244 [debug] [Thread-1 (]: On test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c: ROLLBACK
+[0m18:43:16.703780 [debug] [Thread-1 (]: Failed to rollback 'test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c'
+[0m18:43:16.704068 [debug] [Thread-1 (]: On test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c: Close
+[0m18:43:16.708821 [debug] [Thread-1 (]: Runtime Error in test accepted_values_fct_crypto_prices_is_valid_price__True (models/marts/schema.yml)
+  Binder Error: Referenced column "is_valid_price" not found in FROM clause!
+  Candidate bindings: "in_valid_price", "processed_at", "price_eur"
+  
+  LINE 21:     group by is_valid_price
+                        ^
+[0m18:43:16.709115 [error] [Thread-1 (]: 1 of 3 ERROR accepted_values_fct_crypto_prices_is_valid_price__True ............ [[31mERROR[0m in 0.03s]
+[0m18:43:16.709423 [debug] [Thread-1 (]: Finished running node test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c
+[0m18:43:16.709626 [debug] [Thread-1 (]: Began running node test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1
+[0m18:43:16.709884 [debug] [Thread-4 (]: Marking all children of 'test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c' to be skipped because of status 'error'.  Reason: Runtime Error in test accepted_values_fct_crypto_prices_is_valid_price__True (models/marts/schema.yml)
+  Binder Error: Referenced column "is_valid_price" not found in FROM clause!
+  Candidate bindings: "in_valid_price", "processed_at", "price_eur"
+  
+  LINE 21:     group by is_valid_price
+                        ^.
+[0m18:43:16.710086 [info ] [Thread-1 (]: 2 of 3 START test not_null_fct_crypto_prices_price_eur ......................... [RUN]
+[0m18:43:16.710742 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c, now test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1)
+[0m18:43:16.710960 [debug] [Thread-1 (]: Began compiling node test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1
+[0m18:43:16.714851 [debug] [Thread-1 (]: Writing injected SQL for node "test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1"
+[0m18:43:16.715272 [debug] [Thread-1 (]: Began executing node test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1
+[0m18:43:16.716551 [debug] [Thread-1 (]: Writing runtime sql for node "test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1"
+[0m18:43:16.716987 [debug] [Thread-1 (]: Using duckdb connection "test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1"
+[0m18:43:16.717182 [debug] [Thread-1 (]: On test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1: BEGIN
+[0m18:43:16.717383 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:43:16.717835 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:43:16.718059 [debug] [Thread-1 (]: Using duckdb connection "test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1"
+[0m18:43:16.718257 [debug] [Thread-1 (]: On test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select price_eur
+from "crypto_vault"."main"."fct_crypto_prices"
+where price_eur is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:43:16.719213 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m18:43:16.721892 [debug] [Thread-1 (]: On test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1: ROLLBACK
+[0m18:43:16.722344 [debug] [Thread-1 (]: Failed to rollback 'test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1'
+[0m18:43:16.722602 [debug] [Thread-1 (]: On test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1: Close
+[0m18:43:16.722942 [info ] [Thread-1 (]: 2 of 3 PASS not_null_fct_crypto_prices_price_eur ............................... [[32mPASS[0m in 0.01s]
+[0m18:43:16.723236 [debug] [Thread-1 (]: Finished running node test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1
+[0m18:43:16.723434 [debug] [Thread-1 (]: Began running node test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe
+[0m18:43:16.723639 [info ] [Thread-1 (]: 3 of 3 START test not_null_fct_crypto_prices_ticker ............................ [RUN]
+[0m18:43:16.723844 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1, now test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe)
+[0m18:43:16.724014 [debug] [Thread-1 (]: Began compiling node test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe
+[0m18:43:16.726250 [debug] [Thread-1 (]: Writing injected SQL for node "test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe"
+[0m18:43:16.726715 [debug] [Thread-1 (]: Began executing node test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe
+[0m18:43:16.728198 [debug] [Thread-1 (]: Writing runtime sql for node "test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe"
+[0m18:43:16.728565 [debug] [Thread-1 (]: Using duckdb connection "test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe"
+[0m18:43:16.728740 [debug] [Thread-1 (]: On test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe: BEGIN
+[0m18:43:16.728933 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:43:16.729310 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:43:16.729488 [debug] [Thread-1 (]: Using duckdb connection "test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe"
+[0m18:43:16.729666 [debug] [Thread-1 (]: On test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ticker
+from "crypto_vault"."main"."fct_crypto_prices"
+where ticker is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:43:16.730179 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:43:16.731027 [debug] [Thread-1 (]: On test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe: ROLLBACK
+[0m18:43:16.731353 [debug] [Thread-1 (]: Failed to rollback 'test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe'
+[0m18:43:16.731520 [debug] [Thread-1 (]: On test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe: Close
+[0m18:43:16.731797 [info ] [Thread-1 (]: 3 of 3 PASS not_null_fct_crypto_prices_ticker .................................. [[32mPASS[0m in 0.01s]
+[0m18:43:16.732068 [debug] [Thread-1 (]: Finished running node test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe
+[0m18:43:16.732767 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:43:16.732936 [debug] [MainThread]: On master: BEGIN
+[0m18:43:16.733075 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:43:16.733329 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:43:16.733466 [debug] [MainThread]: On master: COMMIT
+[0m18:43:16.733600 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:43:16.733724 [debug] [MainThread]: On master: COMMIT
+[0m18:43:16.734116 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:43:16.734441 [debug] [MainThread]: On master: Close
+[0m18:43:16.734713 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:43:16.734875 [debug] [MainThread]: Connection 'test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe' was properly closed.
+[0m18:43:16.735047 [info ] [MainThread]: 
+[0m18:43:16.735217 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 0.19 seconds (0.19s).
+[0m18:43:16.735694 [debug] [MainThread]: Command end result
+[0m18:43:16.759819 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/manifest.json
+[0m18:43:16.762276 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/semantic_manifest.json
+[0m18:43:16.767763 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/run_results.json
+[0m18:43:16.768013 [info ] [MainThread]: 
+[0m18:43:16.768221 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m18:43:16.768460 [info ] [MainThread]: 
+[0m18:43:16.768668 [error] [MainThread]: [31mFailure in test accepted_values_fct_crypto_prices_is_valid_price__True (models/marts/schema.yml)[0m
+[0m18:43:16.768861 [error] [MainThread]:   Runtime Error in test accepted_values_fct_crypto_prices_is_valid_price__True (models/marts/schema.yml)
+  Binder Error: Referenced column "is_valid_price" not found in FROM clause!
+  Candidate bindings: "in_valid_price", "processed_at", "price_eur"
+  
+  LINE 21:     group by is_valid_price
+                        ^
+[0m18:43:16.769000 [info ] [MainThread]: 
+[0m18:43:16.769168 [info ] [MainThread]:   compiled code at target/compiled/crypto_data/models/marts/schema.yml/accepted_values_fct_crypto_prices_is_valid_price__True.sql
+[0m18:43:16.769543 [info ] [MainThread]: 
+[0m18:43:16.769935 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=3
+[0m18:43:16.771884 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 0.7149729, "process_in_blocks": "0", "process_kernel_time": 0.254896, "process_mem_max_rss": "154992640", "process_out_blocks": "0", "process_user_time": 1.308966}
+[0m18:43:16.772186 [debug] [MainThread]: Command `dbt test` failed at 18:43:16.772128 after 0.72 seconds
+[0m18:43:16.772416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bc304d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c514b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c514c00>]}
+[0m18:43:16.772624 [debug] [MainThread]: Flushing usage events
+[0m18:43:17.270954 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:45:17.759634 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ab6cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109acf750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109acf610>]}
+
+
+============================== 18:45:17.762487 | a33e80b1-5d8e-4fe1-a93c-96f09d6fcca1 ==============================
+[0m18:45:17.762487 [info ] [MainThread]: Running with dbt=1.11.6
+[0m18:45:17.762848 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'write_json': 'True', 'log_format': 'default', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'debug': 'False', 'use_colors': 'True', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'static_parser': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'quiet': 'False', 'warn_error': 'None', 'target_path': 'None', 'invocation_command': 'dbt run', 'fail_fast': 'False', 'partial_parse': 'True', 'log_path': '/Users/mirnadellamonicaioshida/Desktop/crypto_data/logs', 'profiles_dir': '/Users/mirnadellamonicaioshida/.dbt', 'version_check': 'True'}
+[0m18:45:17.931293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a33e80b1-5d8e-4fe1-a93c-96f09d6fcca1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108dbdf30>]}
+[0m18:45:17.973930 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a33e80b1-5d8e-4fe1-a93c-96f09d6fcca1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a4de10>]}
+[0m18:45:17.975406 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m18:45:18.029667 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m18:45:18.109441 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m18:45:18.109890 [debug] [MainThread]: Partial parsing: updated file: crypto_data://models/marts/fct_crypto_prices.sql
+[0m18:45:18.369465 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on
+'fct_crypto_prices' in package 'crypto_data' (models/marts/schema.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m18:45:18.369850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'a33e80b1-5d8e-4fe1-a93c-96f09d6fcca1', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a29c550>]}
+[0m18:45:18.410365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a33e80b1-5d8e-4fe1-a93c-96f09d6fcca1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a027d40>]}
+[0m18:45:18.450214 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/manifest.json
+[0m18:45:18.451663 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/semantic_manifest.json
+[0m18:45:18.466173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a33e80b1-5d8e-4fe1-a93c-96f09d6fcca1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109cfacf0>]}
+[0m18:45:18.466441 [info ] [MainThread]: Found 2 models, 3 data tests, 474 macros
+[0m18:45:18.466637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a33e80b1-5d8e-4fe1-a93c-96f09d6fcca1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a2ec050>]}
+[0m18:45:18.467700 [info ] [MainThread]: 
+[0m18:45:18.467904 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:45:18.468056 [info ] [MainThread]: 
+[0m18:45:18.468313 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m18:45:18.470948 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_crypto_vault'
+[0m18:45:18.541238 [debug] [ThreadPool]: Using duckdb connection "list_crypto_vault"
+[0m18:45:18.541555 [debug] [ThreadPool]: On list_crypto_vault: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "connection_name": "list_crypto_vault"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"crypto_vault"'
+    
+  
+  
+[0m18:45:18.541737 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:45:18.549195 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m18:45:18.550009 [debug] [ThreadPool]: On list_crypto_vault: Close
+[0m18:45:18.550429 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_crypto_vault, now create_crypto_vault_main)
+[0m18:45:18.550684 [debug] [ThreadPool]: Creating schema "database: "crypto_vault"
+schema: "main"
+"
+[0m18:45:18.554437 [debug] [ThreadPool]: Using duckdb connection "create_crypto_vault_main"
+[0m18:45:18.554625 [debug] [ThreadPool]: On create_crypto_vault_main: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "connection_name": "create_crypto_vault_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='crypto_vault'
+        and type='sqlite'
+    
+  
+[0m18:45:18.554771 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:45:18.555193 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m18:45:18.555854 [debug] [ThreadPool]: Using duckdb connection "create_crypto_vault_main"
+[0m18:45:18.556001 [debug] [ThreadPool]: On create_crypto_vault_main: BEGIN
+[0m18:45:18.556213 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m18:45:18.556339 [debug] [ThreadPool]: Using duckdb connection "create_crypto_vault_main"
+[0m18:45:18.556471 [debug] [ThreadPool]: On create_crypto_vault_main: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "connection_name": "create_crypto_vault_main"} */
+
+    
+    
+        create schema if not exists "crypto_vault"."main"
+    
+[0m18:45:18.556704 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m18:45:18.557092 [debug] [ThreadPool]: On create_crypto_vault_main: COMMIT
+[0m18:45:18.557248 [debug] [ThreadPool]: Using duckdb connection "create_crypto_vault_main"
+[0m18:45:18.557384 [debug] [ThreadPool]: On create_crypto_vault_main: COMMIT
+[0m18:45:18.557639 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m18:45:18.557845 [debug] [ThreadPool]: On create_crypto_vault_main: Close
+[0m18:45:18.558484 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_crypto_vault_main, now list_crypto_vault_main)
+[0m18:45:18.561650 [debug] [ThreadPool]: Using duckdb connection "list_crypto_vault_main"
+[0m18:45:18.561814 [debug] [ThreadPool]: On list_crypto_vault_main: BEGIN
+[0m18:45:18.561944 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:45:18.562159 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m18:45:18.562288 [debug] [ThreadPool]: Using duckdb connection "list_crypto_vault_main"
+[0m18:45:18.562424 [debug] [ThreadPool]: On list_crypto_vault_main: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "connection_name": "list_crypto_vault_main"} */
+select
+      'crypto_vault' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'crypto_vault'
+  
+[0m18:45:18.568426 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m18:45:18.569123 [debug] [ThreadPool]: On list_crypto_vault_main: ROLLBACK
+[0m18:45:18.569937 [debug] [ThreadPool]: Failed to rollback 'list_crypto_vault_main'
+[0m18:45:18.570097 [debug] [ThreadPool]: On list_crypto_vault_main: Close
+[0m18:45:18.570592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a33e80b1-5d8e-4fe1-a93c-96f09d6fcca1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6781d0>]}
+[0m18:45:18.570841 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:45:18.570990 [debug] [MainThread]: On master: BEGIN
+[0m18:45:18.571130 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:45:18.571387 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:45:18.571523 [debug] [MainThread]: On master: COMMIT
+[0m18:45:18.571659 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:45:18.571785 [debug] [MainThread]: On master: COMMIT
+[0m18:45:18.571994 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:45:18.572131 [debug] [MainThread]: On master: Close
+[0m18:45:18.573379 [debug] [Thread-1 (]: Began running node model.crypto_data.stg_raw_coin_data
+[0m18:45:18.573644 [info ] [Thread-1 (]: 1 of 2 START sql view model main.stg_raw_coin_data ............................. [RUN]
+[0m18:45:18.573913 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_crypto_vault_main, now model.crypto_data.stg_raw_coin_data)
+[0m18:45:18.574125 [debug] [Thread-1 (]: Began compiling node model.crypto_data.stg_raw_coin_data
+[0m18:45:18.577691 [debug] [Thread-1 (]: Writing injected SQL for node "model.crypto_data.stg_raw_coin_data"
+[0m18:45:18.578191 [debug] [Thread-1 (]: Began executing node model.crypto_data.stg_raw_coin_data
+[0m18:45:18.595576 [debug] [Thread-1 (]: Writing runtime sql for node "model.crypto_data.stg_raw_coin_data"
+[0m18:45:18.596258 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.stg_raw_coin_data"
+[0m18:45:18.596462 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: BEGIN
+[0m18:45:18.596640 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:45:18.597021 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:45:18.597187 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.stg_raw_coin_data"
+[0m18:45:18.597358 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "model.crypto_data.stg_raw_coin_data"} */
+
+  
+  create view "crypto_vault"."main"."stg_raw_coin_data__dbt_tmp" as (
+    -- This model reads the raw parquet file created by the Python script
+select
+    ticker::varchar as ticker,
+    price::float as price_eur,
+    current_timestamp as processed_at
+from 'data/raw_coin_data.parquet'
+  );
+
+[0m18:45:18.598260 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m18:45:18.601556 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.stg_raw_coin_data"
+[0m18:45:18.601774 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "model.crypto_data.stg_raw_coin_data"} */
+alter view "crypto_vault"."main"."stg_raw_coin_data" rename to "stg_raw_coin_data__dbt_backup"
+[0m18:45:18.602115 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:45:18.603789 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.stg_raw_coin_data"
+[0m18:45:18.603973 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "model.crypto_data.stg_raw_coin_data"} */
+alter view "crypto_vault"."main"."stg_raw_coin_data__dbt_tmp" rename to "stg_raw_coin_data"
+[0m18:45:18.604253 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:45:18.610729 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: COMMIT
+[0m18:45:18.610968 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.stg_raw_coin_data"
+[0m18:45:18.611145 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: COMMIT
+[0m18:45:18.611726 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:45:18.614455 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.stg_raw_coin_data"
+[0m18:45:18.614643 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "model.crypto_data.stg_raw_coin_data"} */
+
+      drop view if exists "crypto_vault"."main"."stg_raw_coin_data__dbt_backup" cascade
+    
+[0m18:45:18.614999 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:45:18.616319 [debug] [Thread-1 (]: On model.crypto_data.stg_raw_coin_data: Close
+[0m18:45:18.617583 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a33e80b1-5d8e-4fe1-a93c-96f09d6fcca1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a327b70>]}
+[0m18:45:18.617939 [info ] [Thread-1 (]: 1 of 2 OK created sql view model main.stg_raw_coin_data ........................ [[32mOK[0m in 0.04s]
+[0m18:45:18.618245 [debug] [Thread-1 (]: Finished running node model.crypto_data.stg_raw_coin_data
+[0m18:45:18.618635 [debug] [Thread-1 (]: Began running node model.crypto_data.fct_crypto_prices
+[0m18:45:18.618907 [info ] [Thread-1 (]: 2 of 2 START sql table model main.fct_crypto_prices ............................ [RUN]
+[0m18:45:18.619163 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.crypto_data.stg_raw_coin_data, now model.crypto_data.fct_crypto_prices)
+[0m18:45:18.619343 [debug] [Thread-1 (]: Began compiling node model.crypto_data.fct_crypto_prices
+[0m18:45:18.621074 [debug] [Thread-1 (]: Writing injected SQL for node "model.crypto_data.fct_crypto_prices"
+[0m18:45:18.621553 [debug] [Thread-1 (]: Began executing node model.crypto_data.fct_crypto_prices
+[0m18:45:18.632332 [debug] [Thread-1 (]: Writing runtime sql for node "model.crypto_data.fct_crypto_prices"
+[0m18:45:18.633234 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.fct_crypto_prices"
+[0m18:45:18.633449 [debug] [Thread-1 (]: On model.crypto_data.fct_crypto_prices: BEGIN
+[0m18:45:18.633618 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:45:18.633966 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:45:18.634128 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.fct_crypto_prices"
+[0m18:45:18.634302 [debug] [Thread-1 (]: On model.crypto_data.fct_crypto_prices: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "model.crypto_data.fct_crypto_prices"} */
+
+  
+    
+    
+
+    create  table
+      "crypto_vault"."main"."fct_crypto_prices__dbt_tmp"
+  
+    as (
+      
+
+WITH prices AS (
+    SELECT * FROM "crypto_vault"."main"."stg_raw_coin_data"
+)
+
+select
+    ticker,
+    price_eur,
+    processed_at,
+    -- Data Quality Flag: flag if the price is valid (positive)
+    case when price_eur > 0 then true else false end as is_valid_price
+from prices
+    );
+  
+  
+[0m18:45:18.635390 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m18:45:18.638452 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.fct_crypto_prices"
+[0m18:45:18.638664 [debug] [Thread-1 (]: On model.crypto_data.fct_crypto_prices: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "model.crypto_data.fct_crypto_prices"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'fct_crypto_prices'
+  
+[0m18:45:18.639073 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:45:18.639712 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.fct_crypto_prices"
+[0m18:45:18.639896 [debug] [Thread-1 (]: On model.crypto_data.fct_crypto_prices: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "model.crypto_data.fct_crypto_prices"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'fct_crypto_prices'
+  
+[0m18:45:18.640336 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:45:18.642321 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.fct_crypto_prices"
+[0m18:45:18.642515 [debug] [Thread-1 (]: On model.crypto_data.fct_crypto_prices: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "model.crypto_data.fct_crypto_prices"} */
+alter table "crypto_vault"."main"."fct_crypto_prices" rename to "fct_crypto_prices__dbt_backup"
+[0m18:45:18.642845 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:45:18.644276 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.fct_crypto_prices"
+[0m18:45:18.644473 [debug] [Thread-1 (]: On model.crypto_data.fct_crypto_prices: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "model.crypto_data.fct_crypto_prices"} */
+alter table "crypto_vault"."main"."fct_crypto_prices__dbt_tmp" rename to "fct_crypto_prices"
+[0m18:45:18.644766 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:45:18.647460 [debug] [Thread-1 (]: On model.crypto_data.fct_crypto_prices: COMMIT
+[0m18:45:18.647650 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.fct_crypto_prices"
+[0m18:45:18.647813 [debug] [Thread-1 (]: On model.crypto_data.fct_crypto_prices: COMMIT
+[0m18:45:18.648208 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:45:18.649574 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_data.fct_crypto_prices"
+[0m18:45:18.649751 [debug] [Thread-1 (]: On model.crypto_data.fct_crypto_prices: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "model.crypto_data.fct_crypto_prices"} */
+
+      drop table if exists "crypto_vault"."main"."fct_crypto_prices__dbt_backup" cascade
+    
+[0m18:45:18.650101 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:45:18.650736 [debug] [Thread-1 (]: On model.crypto_data.fct_crypto_prices: Close
+[0m18:45:18.651040 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a33e80b1-5d8e-4fe1-a93c-96f09d6fcca1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a7523f0>]}
+[0m18:45:18.651376 [info ] [Thread-1 (]: 2 of 2 OK created sql table model main.fct_crypto_prices ....................... [[32mOK[0m in 0.03s]
+[0m18:45:18.651661 [debug] [Thread-1 (]: Finished running node model.crypto_data.fct_crypto_prices
+[0m18:45:18.652324 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:45:18.652482 [debug] [MainThread]: On master: BEGIN
+[0m18:45:18.652620 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:45:18.652847 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:45:18.652982 [debug] [MainThread]: On master: COMMIT
+[0m18:45:18.653113 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:45:18.653238 [debug] [MainThread]: On master: COMMIT
+[0m18:45:18.653470 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:45:18.653651 [debug] [MainThread]: On master: Close
+[0m18:45:18.653848 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:45:18.653989 [debug] [MainThread]: Connection 'model.crypto_data.fct_crypto_prices' was properly closed.
+[0m18:45:18.654146 [info ] [MainThread]: 
+[0m18:45:18.654307 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 0.19 seconds (0.19s).
+[0m18:45:18.654699 [debug] [MainThread]: Command end result
+[0m18:45:18.667463 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/manifest.json
+[0m18:45:18.668914 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/semantic_manifest.json
+[0m18:45:18.672308 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/run_results.json
+[0m18:45:18.672476 [info ] [MainThread]: 
+[0m18:45:18.672683 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:45:18.672836 [info ] [MainThread]: 
+[0m18:45:18.672999 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m18:45:18.673279 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m18:45:18.675322 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.968946, "process_in_blocks": "0", "process_kernel_time": 0.255015, "process_mem_max_rss": "160645120", "process_out_blocks": "0", "process_user_time": 1.576205}
+[0m18:45:18.675596 [debug] [MainThread]: Command `dbt run` succeeded at 18:45:18.675546 after 0.97 seconds
+[0m18:45:18.675801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109ddda50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a34d650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b5c520>]}
+[0m18:45:18.675998 [debug] [MainThread]: Flushing usage events
+[0m18:45:19.206956 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:45:25.067729 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cf82cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10df97750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10df97610>]}
+
+
+============================== 18:45:25.070667 | 680e92e6-b544-4bc5-ada2-eefb50704475 ==============================
+[0m18:45:25.070667 [info ] [MainThread]: Running with dbt=1.11.6
+[0m18:45:25.071045 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'use_colors': 'True', 'warn_error': 'None', 'log_path': '/Users/mirnadellamonicaioshida/Desktop/crypto_data/logs', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'log_cache_events': 'False', 'profiles_dir': '/Users/mirnadellamonicaioshida/.dbt', 'version_check': 'True', 'invocation_command': 'dbt test', 'no_print': 'None', 'introspect': 'True', 'target_path': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'cache_selected_only': 'False', 'partial_parse': 'True', 'printer_width': '80', 'write_json': 'True', 'log_format': 'default'}
+[0m18:45:25.239981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '680e92e6-b544-4bc5-ada2-eefb50704475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d289f30>]}
+[0m18:45:25.282848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '680e92e6-b544-4bc5-ada2-eefb50704475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cf19e10>]}
+[0m18:45:25.284405 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m18:45:25.337546 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m18:45:25.415563 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:45:25.415827 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m18:45:25.415994 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:45:25.437883 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '680e92e6-b544-4bc5-ada2-eefb50704475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e082c50>]}
+[0m18:45:25.478879 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/manifest.json
+[0m18:45:25.480393 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/semantic_manifest.json
+[0m18:45:25.498276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '680e92e6-b544-4bc5-ada2-eefb50704475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e639f40>]}
+[0m18:45:25.498563 [info ] [MainThread]: Found 2 models, 3 data tests, 474 macros
+[0m18:45:25.498770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '680e92e6-b544-4bc5-ada2-eefb50704475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e6f9c50>]}
+[0m18:45:25.502015 [info ] [MainThread]: 
+[0m18:45:25.502231 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:45:25.502382 [info ] [MainThread]: 
+[0m18:45:25.502660 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m18:45:25.505445 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_crypto_vault_main'
+[0m18:45:25.608507 [debug] [ThreadPool]: Using duckdb connection "list_crypto_vault_main"
+[0m18:45:25.608844 [debug] [ThreadPool]: On list_crypto_vault_main: BEGIN
+[0m18:45:25.609023 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:45:25.616312 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m18:45:25.616544 [debug] [ThreadPool]: Using duckdb connection "list_crypto_vault_main"
+[0m18:45:25.616722 [debug] [ThreadPool]: On list_crypto_vault_main: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "connection_name": "list_crypto_vault_main"} */
+select
+      'crypto_vault' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'crypto_vault'
+  
+[0m18:45:25.623095 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m18:45:25.623975 [debug] [ThreadPool]: On list_crypto_vault_main: ROLLBACK
+[0m18:45:25.624864 [debug] [ThreadPool]: Failed to rollback 'list_crypto_vault_main'
+[0m18:45:25.625078 [debug] [ThreadPool]: On list_crypto_vault_main: Close
+[0m18:45:25.625725 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '680e92e6-b544-4bc5-ada2-eefb50704475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e909a50>]}
+[0m18:45:25.626016 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:45:25.626179 [debug] [MainThread]: On master: BEGIN
+[0m18:45:25.626322 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:45:25.626588 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:45:25.626736 [debug] [MainThread]: On master: COMMIT
+[0m18:45:25.626879 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:45:25.627011 [debug] [MainThread]: On master: COMMIT
+[0m18:45:25.627274 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:45:25.627509 [debug] [MainThread]: On master: Close
+[0m18:45:25.629000 [debug] [Thread-1 (]: Began running node test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c
+[0m18:45:25.629222 [info ] [Thread-1 (]: 1 of 3 START test accepted_values_fct_crypto_prices_is_valid_price__True ....... [RUN]
+[0m18:45:25.629474 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_crypto_vault_main, now test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c)
+[0m18:45:25.629665 [debug] [Thread-1 (]: Began compiling node test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c
+[0m18:45:25.639328 [debug] [Thread-1 (]: Writing injected SQL for node "test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c"
+[0m18:45:25.640072 [debug] [Thread-1 (]: Began executing node test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c
+[0m18:45:25.651105 [debug] [Thread-1 (]: Writing runtime sql for node "test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c"
+[0m18:45:25.651769 [debug] [Thread-1 (]: Using duckdb connection "test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c"
+[0m18:45:25.651974 [debug] [Thread-1 (]: On test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c: BEGIN
+[0m18:45:25.652151 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:45:25.652534 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:45:25.652704 [debug] [Thread-1 (]: Using duckdb connection "test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c"
+[0m18:45:25.652886 [debug] [Thread-1 (]: On test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        is_valid_price as value_field,
+        count(*) as n_records
+
+    from "crypto_vault"."main"."fct_crypto_prices"
+    group by is_valid_price
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'True'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:45:25.654306 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m18:45:25.656747 [debug] [Thread-1 (]: On test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c: ROLLBACK
+[0m18:45:25.657139 [debug] [Thread-1 (]: Failed to rollback 'test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c'
+[0m18:45:25.657325 [debug] [Thread-1 (]: On test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c: Close
+[0m18:45:25.657655 [info ] [Thread-1 (]: 1 of 3 PASS accepted_values_fct_crypto_prices_is_valid_price__True ............. [[32mPASS[0m in 0.03s]
+[0m18:45:25.657948 [debug] [Thread-1 (]: Finished running node test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c
+[0m18:45:25.658152 [debug] [Thread-1 (]: Began running node test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1
+[0m18:45:25.658379 [info ] [Thread-1 (]: 2 of 3 START test not_null_fct_crypto_prices_price_eur ......................... [RUN]
+[0m18:45:25.658591 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c, now test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1)
+[0m18:45:25.658764 [debug] [Thread-1 (]: Began compiling node test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1
+[0m18:45:25.662680 [debug] [Thread-1 (]: Writing injected SQL for node "test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1"
+[0m18:45:25.663135 [debug] [Thread-1 (]: Began executing node test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1
+[0m18:45:25.664295 [debug] [Thread-1 (]: Writing runtime sql for node "test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1"
+[0m18:45:25.664737 [debug] [Thread-1 (]: Using duckdb connection "test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1"
+[0m18:45:25.665015 [debug] [Thread-1 (]: On test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1: BEGIN
+[0m18:45:25.665238 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:45:25.665574 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:45:25.665749 [debug] [Thread-1 (]: Using duckdb connection "test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1"
+[0m18:45:25.665930 [debug] [Thread-1 (]: On test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select price_eur
+from "crypto_vault"."main"."fct_crypto_prices"
+where price_eur is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:45:25.666460 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:45:25.667319 [debug] [Thread-1 (]: On test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1: ROLLBACK
+[0m18:45:25.667659 [debug] [Thread-1 (]: Failed to rollback 'test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1'
+[0m18:45:25.667830 [debug] [Thread-1 (]: On test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1: Close
+[0m18:45:25.668129 [info ] [Thread-1 (]: 2 of 3 PASS not_null_fct_crypto_prices_price_eur ............................... [[32mPASS[0m in 0.01s]
+[0m18:45:25.668417 [debug] [Thread-1 (]: Finished running node test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1
+[0m18:45:25.668650 [debug] [Thread-1 (]: Began running node test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe
+[0m18:45:25.669052 [info ] [Thread-1 (]: 3 of 3 START test not_null_fct_crypto_prices_ticker ............................ [RUN]
+[0m18:45:25.669452 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1, now test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe)
+[0m18:45:25.669666 [debug] [Thread-1 (]: Began compiling node test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe
+[0m18:45:25.671839 [debug] [Thread-1 (]: Writing injected SQL for node "test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe"
+[0m18:45:25.672355 [debug] [Thread-1 (]: Began executing node test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe
+[0m18:45:25.673815 [debug] [Thread-1 (]: Writing runtime sql for node "test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe"
+[0m18:45:25.674265 [debug] [Thread-1 (]: Using duckdb connection "test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe"
+[0m18:45:25.674487 [debug] [Thread-1 (]: On test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe: BEGIN
+[0m18:45:25.674749 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:45:25.675345 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m18:45:25.675564 [debug] [Thread-1 (]: Using duckdb connection "test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe"
+[0m18:45:25.675747 [debug] [Thread-1 (]: On test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "node_id": "test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ticker
+from "crypto_vault"."main"."fct_crypto_prices"
+where ticker is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:45:25.676315 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:45:25.677130 [debug] [Thread-1 (]: On test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe: ROLLBACK
+[0m18:45:25.677472 [debug] [Thread-1 (]: Failed to rollback 'test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe'
+[0m18:45:25.677653 [debug] [Thread-1 (]: On test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe: Close
+[0m18:45:25.677950 [info ] [Thread-1 (]: 3 of 3 PASS not_null_fct_crypto_prices_ticker .................................. [[32mPASS[0m in 0.01s]
+[0m18:45:25.678232 [debug] [Thread-1 (]: Finished running node test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe
+[0m18:45:25.678897 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:45:25.679071 [debug] [MainThread]: On master: BEGIN
+[0m18:45:25.679213 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:45:25.679464 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:45:25.679602 [debug] [MainThread]: On master: COMMIT
+[0m18:45:25.679743 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:45:25.679870 [debug] [MainThread]: On master: COMMIT
+[0m18:45:25.680106 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:45:25.680295 [debug] [MainThread]: On master: Close
+[0m18:45:25.680515 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:45:25.680667 [debug] [MainThread]: Connection 'test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe' was properly closed.
+[0m18:45:25.680832 [info ] [MainThread]: 
+[0m18:45:25.680992 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 0.18 seconds (0.18s).
+[0m18:45:25.681447 [debug] [MainThread]: Command end result
+[0m18:45:25.694071 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/manifest.json
+[0m18:45:25.695800 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/semantic_manifest.json
+[0m18:45:25.700003 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/run_results.json
+[0m18:45:25.700219 [info ] [MainThread]: 
+[0m18:45:25.700438 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:45:25.700596 [info ] [MainThread]: 
+[0m18:45:25.700762 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m18:45:25.702534 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.68622506, "process_in_blocks": "0", "process_kernel_time": 0.231174, "process_mem_max_rss": "154550272", "process_out_blocks": "0", "process_user_time": 1.296529}
+[0m18:45:25.702782 [debug] [MainThread]: Command `dbt test` succeeded at 18:45:25.702731 after 0.69 seconds
+[0m18:45:25.702985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1141d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e9fc5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e9fc9f0>]}
+[0m18:45:25.703185 [debug] [MainThread]: Flushing usage events
+[0m18:45:26.208662 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:47:30.908272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a75acf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b76f4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b76f610>]}
+
+
+============================== 18:47:30.911141 | ba5fdea0-0ab2-43f5-9f53-a1bfb0f38e40 ==============================
+[0m18:47:30.911141 [info ] [MainThread]: Running with dbt=1.11.6
+[0m18:47:30.911524 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'version_check': 'True', 'write_json': 'True', 'warn_error': 'None', 'debug': 'False', 'indirect_selection': 'eager', 'partial_parse': 'True', 'invocation_command': 'dbt docs generate', 'log_format': 'default', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'log_path': '/Users/mirnadellamonicaioshida/Desktop/crypto_data/logs', 'quiet': 'False', 'use_colors': 'True', 'no_print': 'None', 'fail_fast': 'False', 'introspect': 'True', 'printer_width': '80', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'profiles_dir': '/Users/mirnadellamonicaioshida/.dbt', 'use_experimental_parser': 'False'}
+[0m18:47:31.080652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ba5fdea0-0ab2-43f5-9f53-a1bfb0f38e40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa71f30>]}
+[0m18:47:31.123255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ba5fdea0-0ab2-43f5-9f53-a1bfb0f38e40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6f1e10>]}
+[0m18:47:31.124843 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m18:47:31.179257 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m18:47:31.258545 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:47:31.258817 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m18:47:31.258986 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:47:31.281000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ba5fdea0-0ab2-43f5-9f53-a1bfb0f38e40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b85ac50>]}
+[0m18:47:31.296266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ba5fdea0-0ab2-43f5-9f53-a1bfb0f38e40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bccc5f0>]}
+[0m18:47:31.296532 [info ] [MainThread]: Found 2 models, 3 data tests, 474 macros
+[0m18:47:31.296733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ba5fdea0-0ab2-43f5-9f53-a1bfb0f38e40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bdfcd70>]}
+[0m18:47:31.297824 [info ] [MainThread]: 
+[0m18:47:31.298029 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:47:31.298185 [info ] [MainThread]: 
+[0m18:47:31.298443 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m18:47:31.301076 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_crypto_vault_main'
+[0m18:47:31.375546 [debug] [ThreadPool]: Using duckdb connection "list_crypto_vault_main"
+[0m18:47:31.375837 [debug] [ThreadPool]: On list_crypto_vault_main: BEGIN
+[0m18:47:31.376009 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:47:31.383150 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m18:47:31.383418 [debug] [ThreadPool]: Using duckdb connection "list_crypto_vault_main"
+[0m18:47:31.383601 [debug] [ThreadPool]: On list_crypto_vault_main: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "connection_name": "list_crypto_vault_main"} */
+select
+      'crypto_vault' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'crypto_vault'
+  
+[0m18:47:31.390259 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m18:47:31.391104 [debug] [ThreadPool]: On list_crypto_vault_main: ROLLBACK
+[0m18:47:31.391855 [debug] [ThreadPool]: Failed to rollback 'list_crypto_vault_main'
+[0m18:47:31.392032 [debug] [ThreadPool]: On list_crypto_vault_main: Close
+[0m18:47:31.392609 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ba5fdea0-0ab2-43f5-9f53-a1bfb0f38e40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c134460>]}
+[0m18:47:31.394053 [debug] [Thread-1 (]: Began running node model.crypto_data.stg_raw_coin_data
+[0m18:47:31.394280 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_crypto_vault_main, now model.crypto_data.stg_raw_coin_data)
+[0m18:47:31.394465 [debug] [Thread-1 (]: Began compiling node model.crypto_data.stg_raw_coin_data
+[0m18:47:31.398092 [debug] [Thread-1 (]: Writing injected SQL for node "model.crypto_data.stg_raw_coin_data"
+[0m18:47:31.398667 [debug] [Thread-1 (]: Began executing node model.crypto_data.stg_raw_coin_data
+[0m18:47:31.399105 [debug] [Thread-1 (]: Finished running node model.crypto_data.stg_raw_coin_data
+[0m18:47:31.399476 [debug] [Thread-1 (]: Began running node model.crypto_data.fct_crypto_prices
+[0m18:47:31.399765 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.crypto_data.stg_raw_coin_data, now model.crypto_data.fct_crypto_prices)
+[0m18:47:31.399989 [debug] [Thread-1 (]: Began compiling node model.crypto_data.fct_crypto_prices
+[0m18:47:31.401973 [debug] [Thread-1 (]: Writing injected SQL for node "model.crypto_data.fct_crypto_prices"
+[0m18:47:31.402442 [debug] [Thread-1 (]: Began executing node model.crypto_data.fct_crypto_prices
+[0m18:47:31.402794 [debug] [Thread-1 (]: Finished running node model.crypto_data.fct_crypto_prices
+[0m18:47:31.403165 [debug] [Thread-1 (]: Began running node test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c
+[0m18:47:31.403401 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.crypto_data.fct_crypto_prices, now test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c)
+[0m18:47:31.403592 [debug] [Thread-1 (]: Began compiling node test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c
+[0m18:47:31.409391 [debug] [Thread-1 (]: Writing injected SQL for node "test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c"
+[0m18:47:31.409834 [debug] [Thread-1 (]: Began executing node test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c
+[0m18:47:31.410168 [debug] [Thread-1 (]: Finished running node test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c
+[0m18:47:31.410355 [debug] [Thread-1 (]: Began running node test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1
+[0m18:47:31.410557 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.crypto_data.accepted_values_fct_crypto_prices_is_valid_price__True.76e4cd719c, now test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1)
+[0m18:47:31.410728 [debug] [Thread-1 (]: Began compiling node test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1
+[0m18:47:31.415937 [debug] [Thread-1 (]: Writing injected SQL for node "test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1"
+[0m18:47:31.416661 [debug] [Thread-1 (]: Began executing node test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1
+[0m18:47:31.417064 [debug] [Thread-1 (]: Finished running node test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1
+[0m18:47:31.417280 [debug] [Thread-1 (]: Began running node test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe
+[0m18:47:31.417490 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.crypto_data.not_null_fct_crypto_prices_price_eur.775592f3c1, now test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe)
+[0m18:47:31.417669 [debug] [Thread-1 (]: Began compiling node test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe
+[0m18:47:31.419681 [debug] [Thread-1 (]: Writing injected SQL for node "test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe"
+[0m18:47:31.420084 [debug] [Thread-1 (]: Began executing node test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe
+[0m18:47:31.420391 [debug] [Thread-1 (]: Finished running node test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe
+[0m18:47:31.420918 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:47:31.421070 [debug] [MainThread]: Connection 'test.crypto_data.not_null_fct_crypto_prices_ticker.dafaab4abe' was properly closed.
+[0m18:47:31.421613 [debug] [MainThread]: Command end result
+[0m18:47:31.498559 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/manifest.json
+[0m18:47:31.500122 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/semantic_manifest.json
+[0m18:47:31.504020 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/run_results.json
+[0m18:47:31.505726 [debug] [MainThread]: Acquiring new duckdb connection 'generate_catalog'
+[0m18:47:31.505903 [info ] [MainThread]: Building catalog
+[0m18:47:31.510364 [debug] [ThreadPool]: Acquiring new duckdb connection 'crypto_vault.information_schema'
+[0m18:47:31.514090 [debug] [ThreadPool]: Using duckdb connection "crypto_vault.information_schema"
+[0m18:47:31.514329 [debug] [ThreadPool]: On crypto_vault.information_schema: BEGIN
+[0m18:47:31.514488 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:47:31.514861 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m18:47:31.515003 [debug] [ThreadPool]: Using duckdb connection "crypto_vault.information_schema"
+[0m18:47:31.515259 [debug] [ThreadPool]: On crypto_vault.information_schema: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "crypto_data_profile", "target_name": "dev", "connection_name": "crypto_vault.information_schema"} */
+with relations AS (
+      select
+        t.table_name
+        , t.database_name
+        , t.schema_name
+        , 'BASE TABLE' as table_type
+        , t.comment as table_comment
+      from duckdb_tables() t
+      WHERE t.database_name = 'crypto_vault'
+      UNION ALL
+      SELECT v.view_name as table_name
+      , v.database_name
+      , v.schema_name
+      , 'VIEW' as table_type
+      , v.comment as table_comment
+      from duckdb_views() v
+      WHERE v.database_name = 'crypto_vault'
+    )
+    select
+        'crypto_vault' as table_database,
+        r.schema_name as table_schema,
+        r.table_name,
+        r.table_type,
+        r.table_comment,
+        c.column_name,
+        c.column_index as column_index,
+        c.data_type as column_type,
+        c.comment as column_comment,
+        NULL as table_owner
+    FROM relations r JOIN duckdb_columns() c ON r.schema_name = c.schema_name AND r.table_name = c.table_name
+    WHERE (upper(r.schema_name) = upper('main'))
+    ORDER BY
+        r.schema_name,
+        r.table_name,
+        c.column_index
+[0m18:47:31.521123 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m18:47:31.522754 [debug] [ThreadPool]: On crypto_vault.information_schema: ROLLBACK
+[0m18:47:31.523138 [debug] [ThreadPool]: Failed to rollback 'crypto_vault.information_schema'
+[0m18:47:31.523299 [debug] [ThreadPool]: On crypto_vault.information_schema: Close
+[0m18:47:31.528928 [debug] [MainThread]: Wrote artifact CatalogArtifact to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/catalog.json
+[0m18:47:31.541447 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/manifest.json
+[0m18:47:31.542702 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/semantic_manifest.json
+[0m18:47:31.542872 [info ] [MainThread]: Catalog written to /Users/mirnadellamonicaioshida/Desktop/crypto_data/target/catalog.json
+[0m18:47:31.544786 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 0.6896736, "process_in_blocks": "0", "process_kernel_time": 0.257046, "process_mem_max_rss": "156008448", "process_out_blocks": "0", "process_user_time": 1.281098}
+[0m18:47:31.545074 [debug] [MainThread]: Command `dbt docs generate` succeeded at 18:47:31.545021 after 0.69 seconds
+[0m18:47:31.545246 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m18:47:31.545379 [debug] [MainThread]: Connection 'crypto_vault.information_schema' was properly closed.
+[0m18:47:31.545550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b8eee10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c1e5e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c1e5ff0>]}
+[0m18:47:31.545741 [debug] [MainThread]: Flushing usage events
+[0m18:47:32.035335 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:47:33.396052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108226cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092334d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109233610>]}
+
+
+============================== 18:47:33.398857 | 1fdda5d9-3fa3-4c37-b8c6-fecefa8d85ff ==============================
+[0m18:47:33.398857 [info ] [MainThread]: Running with dbt=1.11.6
+[0m18:47:33.399233 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'write_json': 'True', 'partial_parse': 'True', 'no_print': 'None', 'use_colors': 'True', 'warn_error': 'None', 'log_format': 'default', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt docs serve', 'profiles_dir': '/Users/mirnadellamonicaioshida/.dbt', 'printer_width': '80', 'target_path': 'None', 'debug': 'False', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'log_path': '/Users/mirnadellamonicaioshida/Desktop/crypto_data/logs', 'quiet': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'introspect': 'True'}
+[0m18:47:33.566809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1fdda5d9-3fa3-4c37-b8c6-fecefa8d85ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10853df30>]}
+[0m18:47:33.609072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1fdda5d9-3fa3-4c37-b8c6-fecefa8d85ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1081bde10>]}
+[0m19:00:16.121994 [error] [MainThread]: Encountered an error:
+
+[0m19:00:16.132077 [error] [MainThread]: Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/dbt/cli/requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/dbt/cli/requires.py", line 276, in wrapper
+    return func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/dbt/cli/requires.py", line 321, in wrapper
+    return func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/dbt/cli/requires.py", line 368, in wrapper
+    return func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/dbt/cli/main.py", line 307, in docs_serve
+    results = task.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/dbt/task/docs/serve.py", line 29, in run
+    httpd.serve_forever()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/selectors.py", line 398, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+
+[0m19:00:16.139922 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 762.8602, "process_in_blocks": "0", "process_kernel_time": 0.219269, "process_mem_max_rss": "136396800", "process_out_blocks": "0", "process_user_time": 1.06698}
+[0m19:00:16.140497 [debug] [MainThread]: Command `dbt docs serve` failed at 19:00:16.140411 after 762.86 seconds
+[0m19:00:16.140845 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109327950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109327850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095f8f50>]}
+[0m19:00:16.141113 [debug] [MainThread]: Flushing usage events
+[0m19:00:16.705449 [debug] [MainThread]: An error was encountered while trying to flush usage events

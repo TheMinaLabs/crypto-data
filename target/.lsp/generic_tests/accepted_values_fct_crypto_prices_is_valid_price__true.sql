@@ -1,0 +1,1 @@
+{{ test_accepted_values(column_name="is_valid_price", model=get_where_subquery(ref('fct_crypto_prices')), values=[true]) }}

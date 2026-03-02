@@ -1,0 +1,11 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+# Local environments
+.venv/
+__pycache__/
+
+# Databases and Data (Do not upload your local DB or raw files)
+data/*.duckdb
+data/*.parquet
+target/
+dbt_packages/
+logs/

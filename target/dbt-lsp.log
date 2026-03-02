@@ -1,0 +1,387 @@
+==================== 2026-03-02T17:08:44.491537Z | 11f7cdd4-43af-4ee9-b853-b1a39a0742f5 ====================
+17:08:44.491747 [info ]: Starting dbt LSP server
+17:08:44.491825 [info ]: Connecting to LSP client on port 8000
+17:08:44.492409 [info ]: Successfully connected to LSP client
+17:08:44.492425 [info ]: Creating LSP service...
+17:08:44.534598 [info ]: Creating LSP server...
+17:08:44.534616 [info ]: Starting LSP server...
+17:08:44.553521 [info ]: Started loading project
+17:08:44.556526 [info ]: Finished loading project [  0.00s]
+17:13:52.983871 [info ]: Started loading project
+17:13:52.986377 [info ]: Loading ~/.dbt/profiles.yml
+17:13:53.141598 [debug]:    Started loading packages
+17:13:53.143627 [debug]:     Loaded [  0.00s] packages
+17:13:53.145140 [info ]: Started parsing
+17:13:53.160758 [info ]: Finished loading project [  0.18s]
+17:13:53.166178 [info ]: Finished parsing [  0.02s]
+17:13:53.166495 [info ]: Cached model count updated: 0 models (estimate)
+17:13:53.166506 [info ]: Cached model count updated: 0 models (accurate)
+17:13:53.166687 [info ]: Started scheduling
+17:13:53.166901 [info ]: Finished scheduling [  0.00s]
+17:13:53.166951 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+17:13:53.166987 [info ]: Started scheduling
+17:13:53.166996 [info ]: Finished scheduling [  0.00s]
+17:13:53.167775 [info ]: Started deferring state
+17:13:53.167783 [info ]: Finished deferring state [  0.00s]
+17:13:53.170463 [info ]: Started downloading schemas
+17:13:53.170538 [debug]:    Started downloading relations
+17:13:53.170708 [debug]:   Finished [  0.00s] downloading relations
+17:13:53.170759 [info ]: Finished downloading schemas [  0.00s]
+17:13:53.258776 [info ]: Started building task graph
+17:13:53.258998 [info ]: Finished building task graph [  0.00s]
+17:13:53.261894 [info ]: Cached model count updated: 0 models (accurate)
+17:13:53.566554 [info ]: Loading ~/.dbt/profiles.yml
+17:25:44.780118 [info ]: Started loading project
+17:25:44.780505 [info ]: Loading ~/.dbt/profiles.yml
+17:25:44.782569 [info ]: Started loading project
+17:25:44.782714 [info ]: Loading ~/.dbt/profiles.yml
+17:25:44.782742 [info ]: Finished loading project [  0.00s]
+17:25:44.924668 [debug]:    Started loading packages
+17:25:44.925171 [debug]:     Loaded [  0.00s] packages
+17:25:44.925618 [info ]: Started parsing
+17:25:44.939657 [info ]: Finished loading project [  0.16s]
+17:25:44.942145 [info ]: Finished parsing [  0.02s]
+17:25:44.942281 [info ]: Cached model count updated: 0 models (estimate)
+17:25:44.942291 [info ]: Cached model count updated: 0 models (accurate)
+17:25:44.942309 [info ]: Started scheduling
+17:25:44.942327 [info ]: Finished scheduling [  0.00s]
+17:25:44.942337 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+17:25:44.942346 [info ]: Started scheduling
+17:25:44.942350 [info ]: Finished scheduling [  0.00s]
+17:25:44.942586 [info ]: Started deferring state
+17:25:44.942593 [info ]: Finished deferring state [  0.00s]
+17:25:44.942774 [info ]: Started downloading schemas
+17:25:44.942784 [debug]:    Started downloading relations
+17:25:44.942797 [debug]:   Finished [  0.00s] downloading relations
+17:25:44.942805 [info ]: Finished downloading schemas [  0.00s]
+17:25:45.028521 [info ]: Started building task graph
+17:25:45.028545 [info ]: Finished building task graph [  0.00s]
+17:25:45.030336 [info ]: Cached model count updated: 0 models (accurate)
+17:28:07.757383 [info ]: Loading ~/.dbt/profiles.yml
+17:28:07.765747 [info ]: Started loading project
+17:28:07.765946 [info ]: Loading ~/.dbt/profiles.yml
+17:28:07.767757 [info ]: Started loading project
+17:28:07.767850 [info ]: Loading ~/.dbt/profiles.yml
+17:28:07.767872 [info ]: Finished loading project [  0.00s]
+17:28:07.909393 [debug]:    Started loading packages
+17:28:07.909923 [debug]:     Loaded [  0.00s] packages
+17:28:07.910347 [info ]: Started parsing
+17:28:07.923367 [info ]: Finished loading project [  0.16s]
+17:28:07.926519 [debug]: Finished parsing models/marts/staging/stg_raw_coin_data.sql [  0.00s]
+17:28:07.926735 [info ]: Finished parsing [  0.02s]
+17:28:07.926867 [info ]: Cached model count updated: 1 models (estimate)
+17:28:07.926876 [info ]: Cached model count updated: 1 models (accurate)
+17:28:07.926905 [info ]: Started scheduling
+17:28:07.926968 [info ]: Finished scheduling [  0.00s]
+17:28:07.926980 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+17:28:07.926987 [info ]: Started scheduling
+17:28:07.926991 [info ]: Finished scheduling [  0.00s]
+17:28:07.927238 [info ]: Started deferring state
+17:28:07.927244 [info ]: Finished deferring state [  0.00s]
+17:28:07.927565 [info ]: Started downloading schemas
+17:28:07.927573 [debug]:    Started downloading relations
+17:28:07.927583 [debug]:   Finished [  0.00s] downloading relations
+17:28:07.927592 [info ]: Finished downloading schemas [  0.00s]
+17:28:08.013948 [info ]: Started building task graph
+17:28:08.014011 [info ]: Finished building task graph [  0.00s]
+17:28:08.015867 [info ]: Cached model count updated: 1 models (accurate)
+17:30:39.178834 [info ]: Started loading project
+17:30:39.179340 [info ]: Loading ~/.dbt/profiles.yml
+17:30:39.181119 [info ]: Started loading project
+17:30:39.181227 [info ]: Loading ~/.dbt/profiles.yml
+17:30:39.181253 [info ]: Finished loading project [  0.00s]
+17:30:39.322918 [debug]:    Started loading packages
+17:30:39.323450 [debug]:     Loaded [  0.00s] packages
+17:30:39.323905 [info ]: Started parsing
+17:30:39.337801 [info ]: Finished loading project [  0.16s]
+17:30:39.339209 [debug]: Finished parsing models/marts/fct_crypto_prices.sql [  0.00s]
+17:30:39.340551 [debug]: Finished parsing models/marts/staging/stg_raw_coin_data.sql [  0.00s]
+17:30:39.340778 [info ]: Finished parsing [  0.02s]
+17:30:39.340950 [info ]: Cached model count updated: 2 models (estimate)
+17:30:39.340961 [info ]: Cached model count updated: 2 models (accurate)
+17:30:39.340979 [info ]: Started scheduling
+17:30:39.341020 [info ]: Finished scheduling [  0.00s]
+17:30:39.341030 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+17:30:39.341038 [info ]: Started scheduling
+17:30:39.341044 [info ]: Finished scheduling [  0.00s]
+17:30:39.341300 [info ]: Started deferring state
+17:30:39.341307 [info ]: Finished deferring state [  0.00s]
+17:30:39.341495 [info ]: Started downloading schemas
+17:30:39.341507 [debug]:    Started downloading relations
+17:30:39.341519 [debug]:   Finished [  0.00s] downloading relations
+17:30:39.341530 [info ]: Finished downloading schemas [  0.00s]
+17:30:39.429895 [info ]: Started building task graph
+17:30:39.429925 [info ]: Finished building task graph [  0.00s]
+17:30:39.431859 [info ]: Cached model count updated: 2 models (accurate)
+17:31:00.329641 [info ]: Started loading project
+17:31:00.330343 [info ]: Loading ~/.dbt/profiles.yml
+17:31:00.332115 [info ]: Started loading project
+17:31:00.332249 [info ]: Loading ~/.dbt/profiles.yml
+17:31:00.332276 [info ]: Finished loading project [  0.00s]
+17:31:00.472771 [debug]:    Started loading packages
+17:31:00.473274 [debug]:     Loaded [  0.00s] packages
+17:31:00.473679 [info ]: Started parsing
+17:31:00.486523 [info ]: Finished loading project [  0.15s]
+17:31:00.487736 [debug]: Finished parsing models/marts/fct_crypto_prices.sql [  0.00s]
+17:31:00.488907 [debug]: Finished parsing models/staging/stg_raw_coin_data.sql [  0.00s]
+17:31:00.489064 [info ]: Finished parsing [  0.02s]
+17:31:00.489189 [info ]: Cached model count updated: 2 models (estimate)
+17:31:00.489198 [info ]: Cached model count updated: 2 models (accurate)
+17:31:00.489210 [info ]: Started scheduling
+17:31:00.489226 [info ]: Finished scheduling [  0.00s]
+17:31:00.489234 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+17:31:00.489240 [info ]: Started scheduling
+17:31:00.489246 [info ]: Finished scheduling [  0.00s]
+17:31:00.489470 [info ]: Started deferring state
+17:31:00.489476 [info ]: Finished deferring state [  0.00s]
+17:31:00.489653 [info ]: Started downloading schemas
+17:31:00.489663 [debug]:    Started downloading relations
+17:31:00.489673 [debug]:   Finished [  0.00s] downloading relations
+17:31:00.489679 [info ]: Finished downloading schemas [  0.00s]
+17:31:00.575246 [info ]: Started building task graph
+17:31:00.575271 [info ]: Finished building task graph [  0.00s]
+17:31:00.577053 [info ]: Cached model count updated: 2 models (accurate)
+17:33:05.681398 [info ]: Started loading project
+17:33:05.681968 [info ]: Loading ~/.dbt/profiles.yml
+17:33:05.684491 [info ]: Started parsing
+17:33:05.695732 [info ]: Finished parsing [  0.01s]
+17:33:05.695951 [info ]: Finished loading project [  0.01s]
+17:33:05.696085 [info ]: Cached model count updated: 2 models (accurate)
+17:33:05.709996 [info ]: Started loading project
+17:33:05.710269 [info ]: Loading ~/.dbt/profiles.yml
+17:33:05.711655 [info ]: Started parsing
+17:33:05.721079 [info ]: Finished loading project [  0.01s]
+17:33:05.722479 [debug]: Finished parsing models/marts/fct_crypto_prices.sql [  0.00s]
+17:33:05.723581 [debug]: Finished parsing models/staging/stg_raw_coin_data.sql [  0.00s]
+17:33:05.723745 [info ]: Finished parsing [  0.01s]
+17:33:05.724318 [info ]: Cached model count updated: 2 models (estimate)
+17:33:05.724327 [info ]: Cached model count updated: 2 models (accurate)
+17:33:05.724342 [info ]: Started scheduling
+17:33:05.724502 [info ]: Finished scheduling [  0.00s]
+17:33:05.724511 [debug]: Incremental compilation - 2 nodes selected: {"model.crypto_data.fct_crypto_prices", "model.crypto_data.stg_raw_coin_data"}
+17:33:05.724715 [info ]: Started deferring state
+17:33:05.724721 [info ]: Finished deferring state [  0.00s]
+17:33:05.724903 [info ]: Started downloading schemas
+17:33:05.724913 [debug]:    Started downloading relations
+17:33:05.724924 [debug]:   Finished [  0.00s] downloading relations
+17:33:05.724932 [info ]: Finished downloading schemas [  0.00s]
+17:33:05.814469 [info ]: Started building task graph
+17:33:05.814661 [info ]: Finished building task graph [  0.00s]
+17:33:05.814998 [info ]: Started rendering (2 nodes)
+17:33:05.815049 [info ]: Started model main.stg_raw_coin_data
+17:33:05.815131 [debug]: Started rendering model main.stg_raw_coin_data
+17:33:05.816808 [debug]: Compiled SQL for node model.crypto_data.stg_raw_coin_data at target/.lsp/compiled/models/staging/stg_raw_coin_data.sql
+17:33:05.816938 [debug]: Finished rendering [  0.00s] model main.stg_raw_coin_data [success]
+17:33:05.816996 [info ]: Started analyzing (2 nodes)
+17:33:05.817002 [debug]: Started analyzing model main.stg_raw_coin_data
+17:33:05.826082 [error]: dbt0101: mismatched input '(' expecting one of <EOF>, ';'
+  --> models/staging/stg_raw_coin_data.sql:6:18 (target/.lsp/compiled/models/staging/stg_raw_coin_data.sql:6:18)
+17:33:05.826098 [info ]:     Failed [  0.01s] model main.stg_raw_coin_data (view)
+17:33:05.826108 [debug]: Finished analyzing [  0.01s] model main.stg_raw_coin_data [error]
+17:33:05.826170 [info ]: Started model main.fct_crypto_prices
+17:33:05.826178 [debug]: Started rendering model main.fct_crypto_prices
+17:33:05.826186 [debug]: Finished rendering [  0.00s] model main.fct_crypto_prices [skipped]
+17:33:05.826190 [info ]: Finished rendering [  0.01s] (2 nodes, 1 skipped, 0 errors)
+17:33:05.826194 [debug]: Started analyzing model main.fct_crypto_prices
+17:33:05.826199 [info ]:    Skipped [-------] model main.fct_crypto_prices (table)
+17:33:05.826205 [debug]: Finished analyzing [  0.00s] model main.fct_crypto_prices [skipped]
+17:33:05.826209 [info ]: Finished analyzing [  0.01s] (2 nodes, 1 skipped, 1 errors)
+17:33:05.828486 [info ]: Cached model count updated: 2 models (accurate)
+17:35:23.713492 [info ]: Started loading project
+17:35:23.714074 [info ]: Loading ~/.dbt/profiles.yml
+17:35:23.716419 [info ]: Started parsing
+17:35:23.726162 [info ]: Finished loading project [  0.01s]
+17:35:23.727759 [debug]: Finished parsing models/staging/stg_raw_coin_data.sql [  0.00s]
+17:35:23.727950 [info ]: Finished parsing [  0.01s]
+17:35:23.728494 [info ]: Cached model count updated: 2 models (estimate)
+17:35:23.728504 [info ]: Cached model count updated: 2 models (accurate)
+17:35:23.728518 [info ]: Started scheduling
+17:35:23.728553 [info ]: Finished scheduling [  0.00s]
+17:35:23.728559 [debug]: Incremental compilation - 2 nodes selected: {"model.crypto_data.fct_crypto_prices", "model.crypto_data.stg_raw_coin_data"}
+17:35:23.728756 [info ]: Started deferring state
+17:35:23.728761 [info ]: Finished deferring state [  0.00s]
+17:35:23.728984 [info ]: Started downloading schemas
+17:35:23.728998 [debug]:    Started downloading relations
+17:35:23.729011 [debug]:   Finished [  0.00s] downloading relations
+17:35:23.729022 [info ]: Finished downloading schemas [  0.00s]
+17:35:23.818069 [info ]: Started building task graph
+17:35:23.818113 [info ]: Finished building task graph [  0.00s]
+17:35:23.818193 [info ]: Started rendering (2 nodes)
+17:35:23.818204 [info ]: Started model main.stg_raw_coin_data
+17:35:23.818211 [debug]: Started rendering model main.stg_raw_coin_data
+17:35:23.819260 [debug]: Compiled SQL for node model.crypto_data.stg_raw_coin_data at target/.lsp/compiled/models/staging/stg_raw_coin_data.sql
+17:35:23.819298 [info ]: Started analyzing (2 nodes)
+17:35:23.819299 [debug]: Finished rendering [  0.00s] model main.stg_raw_coin_data [success]
+17:35:23.819305 [debug]: Started analyzing model main.stg_raw_coin_data
+17:35:23.820117 [error]: dbt0101: mismatched input ''data/raw_coin_data.parquet'' expecting one of 'ABORT', 'ABSENT', 'ADD', 'ADMIN', 'AFTER', 'ALL', 'ALTER' ...
+  --> models/staging/stg_raw_coin_data.sql:6:6 (target/.lsp/compiled/models/staging/stg_raw_coin_data.sql:6:6)
+17:35:23.820131 [info ]:     Failed [  0.00s] model main.stg_raw_coin_data (view)
+17:35:23.820141 [debug]: Finished analyzing [  0.00s] model main.stg_raw_coin_data [error]
+17:35:23.820157 [info ]: Started model main.fct_crypto_prices
+17:35:23.820165 [debug]: Started rendering model main.fct_crypto_prices
+17:35:23.820171 [debug]: Finished rendering [  0.00s] model main.fct_crypto_prices [skipped]
+17:35:23.820174 [info ]: Finished rendering [  0.00s] (2 nodes, 1 skipped, 0 errors)
+17:35:23.820179 [debug]: Started analyzing model main.fct_crypto_prices
+17:35:23.820189 [info ]:    Skipped [-------] model main.fct_crypto_prices (table)
+17:35:23.820196 [debug]: Finished analyzing [  0.00s] model main.fct_crypto_prices [skipped]
+17:35:23.820201 [info ]: Finished analyzing [  0.00s] (2 nodes, 1 skipped, 1 errors)
+17:35:23.822375 [info ]: Cached model count updated: 2 models (accurate)
+17:40:33.745316 [info ]: Started loading project
+17:40:33.746583 [info ]: Loading ~/.dbt/profiles.yml
+17:40:33.748711 [info ]: Started parsing
+17:40:33.759615 [info ]: Finished loading project [  0.01s]
+17:40:33.761515 [debug]: Finished parsing models/marts/fct_crypto_prices.sql [  0.00s]
+17:40:33.761661 [info ]: Finished parsing [  0.01s]
+17:40:33.762207 [info ]: Cached model count updated: 2 models (estimate)
+17:40:33.762216 [info ]: Cached model count updated: 2 models (accurate)
+17:40:33.762233 [info ]: Started scheduling
+17:40:33.762268 [info ]: Finished scheduling [  0.00s]
+17:40:33.762275 [debug]: Incremental compilation - 2 nodes selected: {"model.crypto_data.fct_crypto_prices", "model.crypto_data.stg_raw_coin_data"}
+17:40:33.762574 [info ]: Started deferring state
+17:40:33.762585 [info ]: Finished deferring state [  0.00s]
+17:40:33.762762 [info ]: Started downloading schemas
+17:40:33.762772 [debug]:    Started downloading relations
+17:40:33.762782 [debug]:   Finished [  0.00s] downloading relations
+17:40:33.762791 [info ]: Finished downloading schemas [  0.00s]
+17:40:33.850613 [info ]: Started building task graph
+17:40:33.850653 [info ]: Finished building task graph [  0.00s]
+17:40:33.850741 [info ]: Started rendering (2 nodes)
+17:40:33.850752 [info ]: Started model main.stg_raw_coin_data
+17:40:33.850759 [debug]: Started rendering model main.stg_raw_coin_data
+17:40:33.851411 [debug]: Compiled SQL for node model.crypto_data.stg_raw_coin_data at target/.lsp/compiled/models/staging/stg_raw_coin_data.sql
+17:40:33.851459 [debug]: Finished rendering [  0.00s] model main.stg_raw_coin_data [success]
+17:40:33.851480 [info ]: Started analyzing (2 nodes)
+17:40:33.851488 [debug]: Started analyzing model main.stg_raw_coin_data
+17:40:33.852295 [error]: dbt0101: mismatched input ''data/raw_coin_data.parquet'' expecting one of 'ABORT', 'ABSENT', 'ADD', 'ADMIN', 'AFTER', 'ALL', 'ALTER' ...
+  --> models/staging/stg_raw_coin_data.sql:6:6 (target/.lsp/compiled/models/staging/stg_raw_coin_data.sql:6:6)
+17:40:33.852311 [info ]:     Failed [-------] model main.stg_raw_coin_data (view)
+17:40:33.852320 [debug]: Finished analyzing [  0.00s] model main.stg_raw_coin_data [error]
+17:40:33.852341 [info ]: Started model main.fct_crypto_prices
+17:40:33.852351 [debug]: Started rendering model main.fct_crypto_prices
+17:40:33.852359 [debug]: Finished rendering [  0.00s] model main.fct_crypto_prices [skipped]
+17:40:33.852362 [info ]: Finished rendering [  0.00s] (2 nodes, 1 skipped, 0 errors)
+17:40:33.852366 [debug]: Started analyzing model main.fct_crypto_prices
+17:40:33.852374 [info ]:    Skipped [-------] model main.fct_crypto_prices (table)
+17:40:33.852383 [debug]: Finished analyzing [  0.00s] model main.fct_crypto_prices [skipped]
+17:40:33.852386 [info ]: Finished analyzing [  0.00s] (2 nodes, 1 skipped, 1 errors)
+17:40:33.854818 [info ]: Cached model count updated: 2 models (accurate)
+17:41:05.542100 [info ]: Started loading project
+17:41:05.542557 [info ]: Loading ~/.dbt/profiles.yml
+17:41:05.544158 [info ]: Started loading project
+17:41:05.544258 [info ]: Loading ~/.dbt/profiles.yml
+17:41:05.544280 [info ]: Finished loading project [  0.00s]
+17:41:05.687447 [debug]:    Started loading packages
+17:41:05.688011 [debug]:     Loaded [  0.00s] packages
+17:41:05.688456 [info ]: Started parsing
+17:41:05.701763 [info ]: Finished loading project [  0.16s]
+17:41:05.703228 [debug]: Finished parsing models/marts/schema.yml [  0.00s]
+17:41:05.704329 [debug]: Finished parsing models/marts/fct_crypto_prices.sql [  0.00s]
+17:41:05.705645 [debug]: Finished parsing models/staging/stg_raw_coin_data.sql [  0.00s]
+17:41:05.705845 [info ]: Finished parsing [  0.02s]
+17:41:05.706002 [info ]: Cached model count updated: 2 models (estimate)
+17:41:05.706012 [info ]: Cached model count updated: 2 models (accurate)
+17:41:05.706027 [info ]: Started scheduling
+17:41:05.706056 [info ]: Finished scheduling [  0.00s]
+17:41:05.706065 [info ]: Started scheduling
+17:41:05.706076 [info ]: Finished scheduling [  0.00s]
+17:41:05.706377 [info ]: Started deferring state
+17:41:05.706384 [info ]: Finished deferring state [  0.00s]
+17:41:05.706579 [info ]: Started downloading schemas
+17:41:05.706590 [debug]:    Started downloading relations
+17:41:05.706602 [debug]:   Finished [  0.00s] downloading relations
+17:41:05.706611 [info ]: Finished downloading schemas [  0.00s]
+17:41:05.793063 [info ]: Started building task graph
+17:41:05.793110 [info ]: Finished building task graph [  0.00s]
+17:41:05.793185 [info ]: Started rendering (2 nodes)
+17:41:05.793196 [info ]: Started model main.stg_raw_coin_data
+17:41:05.793203 [debug]: Started rendering model main.stg_raw_coin_data
+17:41:05.794269 [debug]: Compiled SQL for node model.crypto_data.stg_raw_coin_data at target/.lsp/compiled/models/staging/stg_raw_coin_data.sql
+17:41:05.794305 [info ]: Started analyzing (2 nodes)
+17:41:05.794306 [debug]: Finished rendering [  0.00s] model main.stg_raw_coin_data [success]
+17:41:05.794311 [debug]: Started analyzing model main.stg_raw_coin_data
+17:41:05.795069 [error]: dbt0101: mismatched input ''data/raw_coin_data.parquet'' expecting one of 'ABORT', 'ABSENT', 'ADD', 'ADMIN', 'AFTER', 'ALL', 'ALTER' ...
+  --> models/staging/stg_raw_coin_data.sql:6:6 (target/.lsp/compiled/models/staging/stg_raw_coin_data.sql:6:6)
+17:41:05.795085 [info ]:     Failed [  0.00s] model main.stg_raw_coin_data (view)
+17:41:05.795096 [debug]: Finished analyzing [  0.00s] model main.stg_raw_coin_data [error]
+17:41:05.795116 [info ]: Started model main.fct_crypto_prices
+17:41:05.795125 [debug]: Started rendering model main.fct_crypto_prices
+17:41:05.795133 [debug]: Finished rendering [  0.00s] model main.fct_crypto_prices [skipped]
+17:41:05.795136 [info ]: Finished rendering [  0.00s] (2 nodes, 1 skipped, 0 errors)
+17:41:05.795140 [debug]: Started analyzing model main.fct_crypto_prices
+17:41:05.795145 [info ]:    Skipped [-------] model main.fct_crypto_prices (table)
+17:41:05.795151 [debug]: Finished analyzing [  0.00s] model main.fct_crypto_prices [skipped]
+17:41:05.795154 [info ]: Finished analyzing [  0.00s] (2 nodes, 1 skipped, 1 errors)
+17:41:05.797229 [info ]: Cached model count updated: 2 models (accurate)
+17:42:11.322574 [info ]: Started loading project
+17:42:11.322994 [info ]: Loading ~/.dbt/profiles.yml
+17:42:11.326293 [info ]: Started parsing
+17:42:11.335907 [info ]: Finished loading project [  0.01s]
+17:42:11.336810 [debug]: Finished parsing models/marts/schema.yml [  0.00s]
+17:42:11.338927 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/marts/schema.yml:19:23
+17:42:11.339009 [debug]: Finished parsing models/marts/fct_crypto_prices.sql [  0.00s]
+17:42:11.340680 [debug]: Finished parsing target/generic_tests/accepted_values_fct_crypto_prices_is_valid_price__true.sql [  0.00s]
+17:42:11.341231 [debug]: Finished parsing target/generic_tests/not_null_fct_crypto_prices_price_eur.sql [  0.00s]
+17:42:11.342449 [debug]: Finished parsing target/generic_tests/not_null_fct_crypto_prices_ticker.sql [  0.00s]
+17:42:11.342668 [info ]: Finished parsing [  0.02s]
+17:42:11.343244 [info ]: Cached model count updated: 2 models (estimate)
+17:42:11.343254 [info ]: Cached model count updated: 2 models (accurate)
+17:42:11.343270 [info ]: Started scheduling
+17:42:11.343290 [info ]: Finished scheduling [  0.00s]
+17:42:11.343296 [debug]: Incremental compilation - 0 nodes selected: {}
+17:42:11.343336 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+17:42:11.343342 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+17:42:11.343552 [info ]: Started deferring state
+17:42:11.343558 [info ]: Finished deferring state [  0.00s]
+17:42:11.343727 [info ]: Started downloading schemas
+17:42:11.343755 [debug]:    Started downloading relations
+17:42:11.343767 [debug]:   Finished [  0.00s] downloading relations
+17:42:11.343775 [info ]: Finished downloading schemas [  0.00s]
+17:42:11.437021 [info ]: Started building task graph
+17:42:11.437052 [info ]: Finished building task graph [  0.00s]
+17:42:11.439165 [info ]: Cached model count updated: 2 models (accurate)
+17:45:05.934833 [info ]: Started loading project
+17:45:05.935308 [info ]: Loading ~/.dbt/profiles.yml
+17:45:05.938904 [info ]: Started parsing
+17:45:05.949788 [info ]: Finished loading project [  0.01s]
+17:45:05.950207 [debug]: Finished parsing models/marts/schema.yml [  0.00s]
+17:45:05.952083 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/marts/schema.yml:19:23
+17:45:05.952157 [debug]: Finished parsing models/marts/fct_crypto_prices.sql [  0.00s]
+17:45:05.954749 [debug]: Finished parsing target/generic_tests/accepted_values_fct_crypto_prices_is_valid_price__true.sql [  0.00s]
+17:45:05.955428 [debug]: Finished parsing target/generic_tests/not_null_fct_crypto_prices_price_eur.sql [  0.00s]
+17:45:05.956650 [debug]: Finished parsing target/generic_tests/not_null_fct_crypto_prices_ticker.sql [  0.00s]
+17:45:05.956828 [info ]: Finished parsing [  0.02s]
+17:45:05.957388 [info ]: Cached model count updated: 2 models (estimate)
+17:45:05.957400 [info ]: Cached model count updated: 2 models (accurate)
+17:45:05.957417 [info ]: Started scheduling
+17:45:05.957463 [info ]: Finished scheduling [  0.00s]
+17:45:05.957471 [debug]: Incremental compilation - 2 nodes selected: {"model.crypto_data.fct_crypto_prices", "model.crypto_data.stg_raw_coin_data"}
+17:45:05.957673 [info ]: Started deferring state
+17:45:05.957680 [info ]: Finished deferring state [  0.00s]
+17:45:05.957959 [info ]: Started downloading schemas
+17:45:05.957971 [debug]:    Started downloading relations
+17:45:05.957984 [debug]:   Finished [  0.00s] downloading relations
+17:45:05.957993 [info ]: Finished downloading schemas [  0.00s]
+17:45:06.051991 [info ]: Started building task graph
+17:45:06.052043 [info ]: Finished building task graph [  0.00s]
+17:45:06.052129 [info ]: Started rendering (2 nodes)
+17:45:06.052139 [info ]: Started model main.stg_raw_coin_data
+17:45:06.052147 [debug]: Started rendering model main.stg_raw_coin_data
+17:45:06.053884 [debug]: Compiled SQL for node model.crypto_data.stg_raw_coin_data at target/.lsp/compiled/models/staging/stg_raw_coin_data.sql
+17:45:06.053922 [info ]: Started analyzing (2 nodes)
+17:45:06.053928 [debug]: Started analyzing model main.stg_raw_coin_data
+17:45:06.053926 [debug]: Finished rendering [  0.00s] model main.stg_raw_coin_data [success]
+17:45:06.054582 [error]: dbt0101: mismatched input ''data/raw_coin_data.parquet'' expecting one of 'ABORT', 'ABSENT', 'ADD', 'ADMIN', 'AFTER', 'ALL', 'ALTER' ...
+  --> models/staging/stg_raw_coin_data.sql:6:6 (target/.lsp/compiled/models/staging/stg_raw_coin_data.sql:6:6)
+17:45:06.054597 [info ]:     Failed [  0.00s] model main.stg_raw_coin_data (view)
+17:45:06.054606 [debug]: Finished analyzing [  0.00s] model main.stg_raw_coin_data [error]
+17:45:06.054622 [info ]: Started model main.fct_crypto_prices
+17:45:06.054631 [debug]: Started rendering model main.fct_crypto_prices
+17:45:06.054639 [debug]: Finished rendering [  0.00s] model main.fct_crypto_prices [skipped]
+17:45:06.054642 [info ]: Finished rendering [  0.00s] (2 nodes, 1 skipped, 0 errors)
+17:45:06.054646 [debug]: Started analyzing model main.fct_crypto_prices
+17:45:06.054654 [info ]:    Skipped [-------] model main.fct_crypto_prices (table)
+17:45:06.054661 [debug]: Finished analyzing [  0.00s] model main.fct_crypto_prices [skipped]
+17:45:06.054663 [info ]: Finished analyzing [  0.00s] (2 nodes, 1 skipped, 1 errors)
+17:45:06.056898 [info ]: Cached model count updated: 2 models (accurate)

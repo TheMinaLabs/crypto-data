@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: fct_crypto_prices
+    description: "Refined crypto prices with automated quality checks."
+    columns:
+      - name: ticker
+        description: "The currency symbol (e.g., BTC, ETH)"
+        tests:
+          - not_null
+      - name: price_eur
+        description: "The price in Euros"
+        tests:
+          - not_null
+      - name: is_valid_price
+        description: "Boolean flag for data integrity"
+        tests:
+          - accepted_values:
+              values: [true]
