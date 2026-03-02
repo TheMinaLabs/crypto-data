@@ -14,6 +14,9 @@ This project implements a modern "Asset-Centric" data pipeline designed for a 20
 
 - **Orchestration:** Conceptualized for **Dagster** to leverage asset-based tracking and "re-execution from the middle".
 
+![alt text](image-2.png)
+![alt text](image-3.png)
+
 ## **Data Contracts & Quality**
 
 To achieve **99% accuracy**, this pipeline enforces:

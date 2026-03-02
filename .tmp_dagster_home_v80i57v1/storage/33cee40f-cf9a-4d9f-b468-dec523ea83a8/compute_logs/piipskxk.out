@@ -1,0 +1,22 @@
+Running with dbt=1.11.6
+Registered adapter: duckdb=1.10.1
+Found 2 models, 3 data tests, 474 macros
+
+Concurrency: 1 threads (target='dev')
+
+1 of 5 START sql view model main.stg_raw_coin_data ............................. [RUN]
+1 of 5 OK created sql view model main.stg_raw_coin_data ........................ [[32mOK[0m in 0.05s]
+2 of 5 START sql table model main.fct_crypto_prices ............................ [RUN]
+2 of 5 OK created sql table model main.fct_crypto_prices ....................... [[32mOK[0m in 0.04s]
+3 of 5 START test accepted_values_fct_crypto_prices_is_valid_price__True ....... [RUN]
+3 of 5 PASS accepted_values_fct_crypto_prices_is_valid_price__True ............. [[32mPASS[0m in 0.02s]
+4 of 5 START test not_null_fct_crypto_prices_price_eur ......................... [RUN]
+4 of 5 PASS not_null_fct_crypto_prices_price_eur ............................... [[32mPASS[0m in 0.01s]
+5 of 5 START test not_null_fct_crypto_prices_ticker ............................ [RUN]
+5 of 5 PASS not_null_fct_crypto_prices_ticker .................................. [[32mPASS[0m in 0.01s]
+
+Finished running 1 table model, 3 data tests, 1 view model in 0 hours 0 minutes and 0.32 seconds (0.32s).
+
+[32mCompleted successfully[0m
+
+Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=5

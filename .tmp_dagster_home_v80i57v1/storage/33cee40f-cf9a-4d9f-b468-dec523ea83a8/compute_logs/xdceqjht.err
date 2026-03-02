@@ -1,0 +1,7 @@
+[32m2026-03-02 19:49:27 +0100[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 33cee40f-cf9a-4d9f-b468-dec523ea83a8 - 37608 - LOGS_CAPTURED - Started capturing logs in process (pid: 37608).
+[32m2026-03-02 19:49:27 +0100[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 33cee40f-cf9a-4d9f-b468-dec523ea83a8 - 37608 - raw_coin_data - STEP_START - Started execution of step "raw_coin_data".
+[32m2026-03-02 19:49:28 +0100[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 33cee40f-cf9a-4d9f-b468-dec523ea83a8 - 37608 - raw_coin_data - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2026-03-02 19:49:28 +0100[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 33cee40f-cf9a-4d9f-b468-dec523ea83a8 - raw_coin_data - Writing file at: /Users/mirnadellamonicaioshida/Desktop/crypto_data/.tmp_dagster_home_v80i57v1/storage/raw_coin_data using PickledObjectFilesystemIOManager...
+[32m2026-03-02 19:49:28 +0100[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 33cee40f-cf9a-4d9f-b468-dec523ea83a8 - 37608 - raw_coin_data - ASSET_MATERIALIZATION - Materialized value raw_coin_data.
+[32m2026-03-02 19:49:28 +0100[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 33cee40f-cf9a-4d9f-b468-dec523ea83a8 - 37608 - raw_coin_data - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-03-02 19:49:28 +0100[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 33cee40f-cf9a-4d9f-b468-dec523ea83a8 - 37608 - raw_coin_data - STEP_SUCCESS - Finished execution of step "raw_coin_data" in 378ms.

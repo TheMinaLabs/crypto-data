@@ -1,0 +1,44 @@
+[32m2026-03-02 19:36:35 +0100[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 1c634b0a-3441-4f01-94fa-6cfe64907bf0 - 34121 - LOGS_CAPTURED - Started capturing logs in process (pid: 34121).
+[32m2026-03-02 19:36:35 +0100[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 1c634b0a-3441-4f01-94fa-6cfe64907bf0 - 34121 - crypto_dbt_assets - STEP_START - Started execution of step "crypto_dbt_assets".
+[32m2026-03-02 19:36:35 +0100[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1c634b0a-3441-4f01-94fa-6cfe64907bf0 - crypto_dbt_assets - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'fqn:*']`.
+[32m2026-03-02 19:36:37 +0100[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 1c634b0a-3441-4f01-94fa-6cfe64907bf0 - crypto_dbt_assets - An error was encountered when creating a handle to the dbt adapter in Dagster.
+Traceback (most recent call last):
+  File "/Users/mirnadellamonicaioshida/Desktop/crypto_data/.venv/lib/python3.13/site-packages/dagster_dbt/core/resource.py", line 700, in cli
+    adapter = self._initialize_dbt_core_adapter(args)
+  File "/Users/mirnadellamonicaioshida/Desktop/crypto_data/.venv/lib/python3.13/site-packages/dagster_dbt/core/resource.py", line 381, in _initialize_dbt_core_adapter
+    profile = load_profile(self.project_dir, cli_vars, self.profile, self.target)
+  File "/Users/mirnadellamonicaioshida/Desktop/crypto_data/.venv/lib/python3.13/site-packages/dbt/config/runtime.py", line 79, in load_profile
+    profile = Profile.render(
+        profile_renderer, profile_name, profile_name_override, target_override, threads_override
+    )
+  File "/Users/mirnadellamonicaioshida/Desktop/crypto_data/.venv/lib/python3.13/site-packages/dbt/config/profile.py", line 404, in render
+    return cls.from_raw_profiles(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        raw_profiles=raw_profiles,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        threads_override=threads_override,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/mirnadellamonicaioshida/Desktop/crypto_data/.venv/lib/python3.13/site-packages/dbt/config/profile.py", line 361, in from_raw_profiles
+    raise DbtProjectError("Could not find profile named '{}'".format(profile_name))
+dbt.exceptions.DbtProjectError: Runtime Error
+  Could not find profile named 'crypto_data_profile'
+[32m2026-03-02 19:36:37 +0100[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1c634b0a-3441-4f01-94fa-6cfe64907bf0 - crypto_dbt_assets - Copying `/Users/mirnadellamonicaioshida/Desktop/crypto_data/target/partial_parse.msgpack` to `/Users/mirnadellamonicaioshida/Desktop/crypto_data/target/crypto_dbt_assets-1c634b0-fa4a32b/partial_parse.msgpack` to take advantage of partial parsing.
+[32m2026-03-02 19:36:37 +0100[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1c634b0a-3441-4f01-94fa-6cfe64907bf0 - crypto_dbt_assets - Running dbt command: `dbt build --select fqn:*`.
+[32m2026-03-02 19:36:37 +0100[0m - dagster - [34mERROR[0m - [31m__ASSET_JOB - 1c634b0a-3441-4f01-94fa-6cfe64907bf0 - 34121 - crypto_dbt_assets - STEP_FAILURE - Execution of step "crypto_dbt_assets" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "crypto_dbt_assets"::
+
+AttributeError: 'DbtCliInvocation' object has no attribute 'get_artifacts'. Did you mean: 'get_artifact'?
+
+Stack Trace:
+  File "/Users/mirnadellamonicaioshida/Desktop/crypto_data/.venv/lib/python3.13/site-packages/dagster/_core/execution/plan/utils.py", line 57, in op_execution_error_boundary
+    yield
+  File "/Users/mirnadellamonicaioshida/Desktop/crypto_data/.venv/lib/python3.13/site-packages/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+  File "/Users/mirnadellamonicaioshida/Desktop/crypto_data/definitions.py", line 31, in crypto_dbt_assets
+    yield from dbt.cli(["build"], context=context).get_artifacts()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0m
