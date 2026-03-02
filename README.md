@@ -2,25 +2,25 @@
 
 ## **Project Overview**
 
-This project implements a modern "Asset-Centric" data pipeline designed for a 2026 FinTech environment. [cite_start]It transitions from traditional task-based processing to **Software-Defined Assets (SDAs)**, ensuring built-in lineage and observability[cite: 50, 65, 66].
+This project implements a modern "Asset-Centric" data pipeline designed for a 2026 FinTech environment. It transitions from traditional task-based processing to **Software-Defined Assets (SDAs)**, ensuring built-in lineage and observability[cite: 50, 65, 66].
 
 ## **The Architecture**
 
-- [cite_start]**Ingestion:** Python-based harvester targeting CoinGecko API, utilizing **PyArrow** for high-performance columnar storage in Parquet format[cite: 38].
+- **Ingestion:** Python-based harvester targeting CoinGecko API, utilizing **PyArrow** for high-performance columnar storage in Parquet format.
 
-- [cite_start]**Storage:** Local Data Lakehouse architecture using **DuckDB** for in-process analytical processing[cite: 54].
+- **Storage:** Local Data Lakehouse architecture using **DuckDB** for in-process analytical processing.
 
 - **Transformation:** Modular **dbt** modeling following a multi-layered (Staging/Marts) approach.
 
-- [cite_start]**Orchestration:** Conceptualized for **Dagster** to leverage asset-based tracking and "re-execution from the middle"[cite: 101, 102].
+- **Orchestration:** Conceptualized for **Dagster** to leverage asset-based tracking and "re-execution from the middle".
 
 ## **Data Contracts & Quality**
 
 To achieve **99% accuracy**, this pipeline enforces:
 
-- [cite_start]**Schema-on-Write:** Strict validation during the ingestion phase[cite: 11].
+- **Schema-on-Write:** Strict validation during the ingestion phase.
 
-- [cite_start]**Automated Testing:** dbt tests for 'not_null' and price-range validation to prevent "data swamps"[cite: 11, 21].
+- **Automated Testing:** dbt tests for 'not_null' and price-range validation to prevent "data swamps".
 
 - **Lineage:** Full visibility from raw API ingestion to final analytical models.
 
