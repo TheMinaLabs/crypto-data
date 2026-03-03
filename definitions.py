@@ -6,14 +6,14 @@ import pandas as pd
 import requests
 import sys
 
-# Find the dbt executable inside your current .venv
+# Find the dbt executable inside current .venv
 dbt_executable = os.path.join(sys.prefix, "bin", "dbt")
 
 # 1. Setup the dbt path
 DBT_PROJECT_DIR = Path(__file__).joinpath("..").resolve()
 dbt_resource = DbtCliResource(
     project_dir=os.fspath(DBT_PROJECT_DIR),
-    executable=dbt_executable, # Forces Dagster to use the .venv dbt
+    executable=dbt_executable, # Forces Dagster to use the .venv dbt (virtual environment)
 )
 
 # 2. Define the Ingestion as a Dagster Asset

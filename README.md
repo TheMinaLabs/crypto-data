@@ -1,5 +1,7 @@
 # 📈 VeraTrade: High-Veracity Crypto Data Platform
 
+Why VeraTrade? It is a play on the Latin word "Veritas" (meaning truth) and the core mission of ensuring "High-Veracity" data.
+
 ## **Project Overview**
 
 This project implements a modern "Asset-Centric" data pipeline designed for a 2026 FinTech environment. It transitions from traditional task-based processing to **Software-Defined Assets (SDAs)**, ensuring built-in lineage and observability.
@@ -34,7 +36,7 @@ The final layer is a **Streamlit** dashboard that connects directly to the **Duc
 
 ## **Data Contracts & Quality**
 
-To achieve **99% accuracy**, this pipeline enforces:
+To achieve **accuracy**, this pipeline enforces:
 
 - **Schema-on-Write:** Strict validation during the ingestion phase.
 
